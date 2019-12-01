@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "buildbasics:block/glass_spruce_door_bottom",
+        "top": "buildbasics:block/glass_spruce_door_top"
+    }
+}

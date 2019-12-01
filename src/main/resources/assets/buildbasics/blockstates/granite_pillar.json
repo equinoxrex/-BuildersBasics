@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "buildbasics:block/granite_pillar" },
+        "axis=z": { "model": "buildbasics:block/granite_pillar", "x": 90 },
+        "axis=x": { "model": "buildbasics:block/granite_pillar", "x": 90, "y": 90 }
+    }
+}

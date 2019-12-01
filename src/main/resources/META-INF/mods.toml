@@ -1,0 +1,51 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[28,)" #mandatory (28 is current forge version)
+# A URL to refer people to when problems occur with this mod
+#issueTrackerURL="http://my.issue.tracker/" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="buildbasics" #mandatory
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+version="0.3.0" #mandatory
+ # A display name for the mod
+displayName="Builder's Basics" #mandatory
+# A URL for the "homepage" for this mod, displayed in the mod UI
+#displayURL="http://example.com/" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="build_basics.png" #optional
+# A text field displayed in the mod UI
+credits="Thanks to everyone who suggested ideas and critiqued our textures on the discord server" #optional
+# A text field displayed in the mod UI
+authors="Arobazzz and Equinox" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Builder's Basics is a mod made for builder's (obviously).
+It adds a bunch of new and unique building and decoration blocks while trying to keep in the style of vanilla Minecraft.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.buildbasics]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[28,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.buildbasics]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"

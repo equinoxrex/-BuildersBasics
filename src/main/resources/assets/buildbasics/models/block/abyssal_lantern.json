@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "buildbasics:block/abyssal_lantern_top",
+        "side": "buildbasics:block/abyssal_lantern"
+    }
+}

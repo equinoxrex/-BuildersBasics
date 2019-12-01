@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "buildbasics:block/end_stone_tiles"
+    }
+}

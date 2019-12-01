@@ -1,0 +1,58 @@
+{
+    "variants": {
+        "pickles=1,waterlogged=false": [
+            { "model": "buildbasics:block/one_green_candle" }
+        ],
+        "pickles=2,waterlogged=false,facing=north": [
+            { "model": "buildbasics:block/two_green_candles"}
+        ],
+        "pickles=2,waterlogged=false,facing=east": [
+            { "model": "buildbasics:block/two_green_candles", "y": 90}
+        ],
+        "pickles=2,waterlogged=false,facing=south": [
+            { "model": "buildbasics:block/two_green_candles", "y": 180}
+        ],
+        "pickles=2,waterlogged=false,facing=west": [
+            { "model": "buildbasics:block/two_green_candles", "y": 270}
+        ],
+        "pickles=3,waterlogged=false,facing=north": [
+            { "model": "buildbasics:block/three_green_candles"}
+        ],
+        "pickles=3,waterlogged=false,facing=east": [
+            { "model": "buildbasics:block/three_green_candles", "y": 90}
+        ],
+        "pickles=3,waterlogged=false,facing=south": [
+            { "model": "buildbasics:block/three_green_candles", "y": 180}
+        ],
+        "pickles=3,waterlogged=false,facing=west": [
+            { "model": "buildbasics:block/three_green_candles", "y": 270}
+        ],
+        "pickles=1,waterlogged=true": [
+            { "model": "buildbasics:block/one_green_candle" }
+        ],
+        "pickles=2,waterlogged=true,facing=north": [
+            { "model": "buildbasics:block/two_green_candles"}
+        ],
+        "pickles=2,waterlogged=true,facing=east": [
+            { "model": "buildbasics:block/two_green_candles", "y": 90}
+        ],
+        "pickles=2,waterlogged=true,facing=south": [
+            { "model": "buildbasics:block/two_green_candles", "y": 180}
+        ],
+        "pickles=2,waterlogged=true,facing=west": [
+            { "model": "buildbasics:block/two_green_candles", "y": 270}
+        ],
+        "pickles=3,waterlogged=true,facing=north": [
+            { "model": "buildbasics:block/three_green_candles"}
+        ],
+        "pickles=3,waterlogged=true,facing=east": [
+            { "model": "buildbasics:block/three_green_candles", "y": 90}
+        ],
+        "pickles=3,waterlogged=true,facing=south": [
+            { "model": "buildbasics:block/three_green_candles", "y": 180}
+        ],
+        "pickles=3,waterlogged=true,facing=west": [
+            { "model": "buildbasics:block/three_green_candles", "y": 270}
+        ]
+    }
+}

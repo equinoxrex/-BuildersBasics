@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "buildbasics:block/gtp_pillar_orange_top",
+        "side": "buildbasics:block/gtp_pillar_orange"
+    }
+}

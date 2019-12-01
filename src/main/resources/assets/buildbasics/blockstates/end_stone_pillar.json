@@ -1,0 +1,25 @@
+{
+    "variants": {
+        "axis=y": [
+	    { "model": "buildbasics:block/end_stone_pillar_eq" },
+	    { "model": "buildbasics:block/end_stone_pillar_in" },
+	    { "model": "buildbasics:block/end_stone_pillar_ox" },
+	    { "model": "buildbasics:block/end_stone_pillar_fi" },
+	    { "model": "buildbasics:block/end_stone_pillar_ve" }
+	],
+        "axis=z": [
+	    { "model": "buildbasics:block/end_stone_pillar_eq", "x": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_in", "x": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_ox", "x": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_fi", "x": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_ve", "x": 90 }
+	],
+        "axis=x": [
+	    { "model": "buildbasics:block/end_stone_pillar_eq", "x": 90, "y": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_in", "x": 90, "y": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_ox", "x": 90, "y": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_fi", "x": 90, "y": 90 },
+	    { "model": "buildbasics:block/end_stone_pillar_ve", "x": 90, "y": 90 }
+	]
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "buildbasics:block/gtp_pillar_cyan" },
+        "axis=z": { "model": "buildbasics:block/gtp_pillar_cyan", "x": 90 },
+        "axis=x": { "model": "buildbasics:block/gtp_pillar_cyan", "x": 90, "y": 90 }
+    }
+}

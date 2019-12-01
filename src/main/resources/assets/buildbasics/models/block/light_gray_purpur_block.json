@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "buildbasics:block/light_gray_purpur_block"
+    }
+}
