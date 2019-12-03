@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:pink_candle"
+          "name": "buildbasics:glass_door"
         }
       ],
       "conditions": [

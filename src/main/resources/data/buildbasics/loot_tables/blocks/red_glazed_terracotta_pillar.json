@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:red_terracotta_bricks"
+          "name": "buildbasics:red_glazed_terracotta_pillar"
         }
       ],
       "conditions": [

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:stone_pillar"
+          "name": "buildbasics:end_stone_pillar"
         }
       ],
       "conditions": [

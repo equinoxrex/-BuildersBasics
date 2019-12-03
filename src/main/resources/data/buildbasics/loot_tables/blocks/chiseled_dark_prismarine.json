@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:andesite_bricks"
+          "name": "buildbasics:chiseled_dark_prismarine"
         }
       ],
       "conditions": [

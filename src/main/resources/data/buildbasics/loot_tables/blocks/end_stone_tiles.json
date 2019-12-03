@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:small_granite_bricks"
+          "name": "buildbasics:end_stone_tiles"
         }
       ],
       "conditions": [
