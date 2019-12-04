@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:lime_purpur_candle"
+          "name": "buildbasics:lime_candle"
         }
       ],
       "conditions": [

@@ -6,6 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "buildbasics:birch_glass_door",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
           "name": "buildbasics:birch_glass_door"
         }
       ],
