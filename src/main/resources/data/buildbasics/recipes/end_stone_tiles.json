@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
+    " # ",
     "# #",
-    " ##"
+    " # "
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:end_stone_bricks"
     }
   },
   "result": {
-    "item": "buildbasics:iron_chain",
+    "item": "buildbasics:end_stone_tiles",
     "count": 4
   }
 }

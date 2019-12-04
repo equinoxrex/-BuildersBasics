@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    "# #",
-    " ##"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:lime_terracotta"
     }
   },
   "result": {
-    "item": "buildbasics:iron_chain",
+    "item": "buildbasics:lime_terracotta_bricks",
     "count": 4
   }
 }

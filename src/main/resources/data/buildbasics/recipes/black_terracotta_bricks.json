@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    "# #",
-    " ##"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:black_terracotta"
     }
   },
   "result": {
-    "item": "buildbasics:iron_chain",
+    "item": "buildbasics:black_terracotta_bricks",
     "count": 4
   }
 }
