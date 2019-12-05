@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "buildbasics:dark_prismarine_bricks"
+    }
+  },
+  "result": {
+    "item": "buildbasics:dark_prismarine_tiles",
+    "count": 4
+  }
+}

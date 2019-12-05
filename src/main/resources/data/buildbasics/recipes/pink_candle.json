@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S",
+    "#",
+    "X"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "minecraft:slime_ball"
+    },
+    "X": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "buildbasics:black_candle"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stained_terracotta",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purpur_block"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "item": "buildbasics:blue_purpur_block",
+    "count": 8
+  }
+}
