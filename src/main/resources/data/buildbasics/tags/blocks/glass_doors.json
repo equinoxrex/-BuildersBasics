@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "buildbasics:oak_glass_door",
+    "buildbasics:spruce_glass_door",
+    "buildbasics:birch_glass_door",
+    "buildbasics:jungle_glass_door",
+    "buildbasics:acacia_glass_door",
+    "buildbasics:dark_oak_glass_door",
+    "buildbasics:glass_door"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:oak_planks",
+    "minecraft:spruce_planks",
+    "minecraft:birch_planks",
+    "minecraft:jungle_planks",
+    "minecraft:acacia_planks",
+    "minecraft:dark_oak_planks",
+    "buildbasics:oak_boards",
+    "buildbasics:spruce_boards",
+    "buildbasics:birch_boards",
+    "buildbasics:jungle_boards",
+    "buildbasics:acacia_boards",
+    "buildbasics:dark_oak_boards"
+  ]
+}

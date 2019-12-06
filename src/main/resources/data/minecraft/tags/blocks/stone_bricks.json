@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone_bricks",
+    "buildbasics:small_stone_bricks",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:cracked_stone_bricks",
+    "minecraft:chiseled_stone_bricks",
+    "buildbasics:andesite_bricks",
+    "buildbasics:diorite_bricks",
+    "buildbasics:granite_bricks",
+    "buildbasics:small_andesite_bricks",
+    "buildbasics:small_diorite_bricks",
+    "buildbasics:small_granite_bricks",
+    "buildbasics:chiseled_andesite",
+    "buildbasics:chiseled_diorite",
+    "buildbasics:chiseled_granite"
+  ]
+}

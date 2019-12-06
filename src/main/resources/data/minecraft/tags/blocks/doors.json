@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wooden_doors",
+    "#buildbasics:glass_doors",
+    "minecraft:iron_door",
+    "buildbasics:iron_glass_door"
+  ]
+}
