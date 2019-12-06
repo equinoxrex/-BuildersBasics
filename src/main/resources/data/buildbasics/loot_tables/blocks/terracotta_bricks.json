@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:terracotta_bricks3"
+          "name": "buildbasics:terracotta_bricks"
         }
       ],
       "conditions": [

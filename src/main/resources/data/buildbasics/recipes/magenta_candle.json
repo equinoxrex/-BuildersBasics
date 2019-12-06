@@ -13,10 +13,10 @@
       "item": "minecraft:slime_ball"
     },
     "X": {
-      "item": "minecraft:black_dye"
+      "item": "minecraft:magenta_dye"
     }
   },
   "result": {
-    "item": "buildbasics:black_candle"
+    "item": "buildbasics:magenta_candle"
   }
 }

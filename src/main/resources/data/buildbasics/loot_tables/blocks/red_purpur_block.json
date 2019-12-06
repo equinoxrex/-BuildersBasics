@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:red_purpur"
+          "name": "buildbasics:red_purpur_block"
         }
       ],
       "conditions": [
