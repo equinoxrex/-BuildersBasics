@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "buildbasics:prismarine_tiles",
+    "buildbasics:prismarine_pillar",
+    "buildbasics:chiseled_prismarine",
+    "buildbasics:dark_prismarine_bricks",
+    "buildbasics:dark_prismarine_tiles",
+    "buildbasics:dark_prismarine_pillar",
+    "buildbasics:chiseled_dark_prismarine"
+  ]
+}
