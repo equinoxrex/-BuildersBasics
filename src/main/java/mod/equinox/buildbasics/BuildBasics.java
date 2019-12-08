@@ -69,7 +69,8 @@ public class BuildBasics {
                     OAK_BOARDS, SPRUCE_BOARDS, BIRCH_BOARDS, JUNGLE_BOARDS, ACACIA_BOARDS, DARK_OAK_BOARDS,
                     OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, GLASS_DOOR,
                     WHITE_CANDLE, ORANGE_CANDLE, MAGENTA_CANDLE, LIGHT_BLUE_CANDLE, YELLOW_CANDLE, LIME_CANDLE, PINK_CANDLE, GRAY_CANDLE,
-                    LIGHT_GRAY_CANDLE, CYAN_CANDLE, PURPLE_CANDLE, BLUE_CANDLE, BROWN_CANDLE, GREEN_CANDLE, RED_CANDLE, BLACK_CANDLE
+                    LIGHT_GRAY_CANDLE, CYAN_CANDLE, PURPLE_CANDLE, BLUE_CANDLE, BROWN_CANDLE, GREEN_CANDLE, RED_CANDLE, BLACK_CANDLE,
+                    POLISHED_STONE_STAIRS, SMALL_STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, SMALL_GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, SMALL_DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS, SMALL_ANDESITE_BRICK_STAIRS
             );
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().registerAll(
@@ -193,6 +194,11 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(GREEN_CANDLE, decoration).setRegistryName("green_candle"));
             event.getRegistry().register(new BlockItem(RED_CANDLE, decoration).setRegistryName("red_candle"));
             event.getRegistry().register(new BlockItem(BLACK_CANDLE, decoration).setRegistryName("black_candle"));
+
+            event.getRegistry().register(new BlockItem(POLISHED_STONE_STAIRS, building).setRegistryName("polished_stone_stairs"));
+            event.getRegistry().register(new BlockItem(SMALL_STONE_BRICK_STAIRS, building).setRegistryName("small_stone_brick_stairs"));
+            event.getRegistry().register(new BlockItem(GRANITE_BRICK_STAIRS, building).setRegistryName("granite_brick_stairs"));
+            event.getRegistry().register(new BlockItem(SMALL_GRANITE_BRICK_STAIRS, building).setRegistryName("small_granite_brick_stairs"));
 
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARDS, building).setRegistryName("wisteria_boards"));
