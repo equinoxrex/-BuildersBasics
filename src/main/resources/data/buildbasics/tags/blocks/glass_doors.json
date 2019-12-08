@@ -8,5 +8,8 @@
     "buildbasics:acacia_glass_door",
     "buildbasics:dark_oak_glass_door",
     "buildbasics:glass_door"
+  ],
+  "optional": [
+    "buildbasics:wisteria_glass_door"
   ]
 }

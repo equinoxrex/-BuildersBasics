@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "buildbasics:block/glass_wisteria_door_bottom",
+        "top": "buildbasics:block/glass_wisteria_door_top"
+    }
+}

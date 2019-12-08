@@ -116,4 +116,12 @@ public class ModBlocks {
     public static Block RED_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.RED).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("red_candle");
     public static Block BLACK_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.BLACK).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("black_candle");
 
+    public static Block POLISHED_STONE_STAIRS = new StairsBlock(() -> POLISHED_STONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("polished_stone_stairs");;
+    public static Block SMALL_STONE_BRICK_STAIRS = new StairsBlock(() -> SMALL_STONE_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("small_stone_brick_stairs");;
+    public static Block GRANITE_BRICK_STAIRS = new StairsBlock(() -> GRANITE_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.DIRT).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("granite_brick_stairs");;
+    public static Block SMALL_GRANITE_BRICK_STAIRS = new StairsBlock(() -> SMALL_GRANITE_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.DIRT).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("small_granite_brick_stairs");;
+
+    public static Block WISTERIA_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("wisteria_glass_door");
+    public static Block WISTERIA_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("wisteria_boards");
+
 }

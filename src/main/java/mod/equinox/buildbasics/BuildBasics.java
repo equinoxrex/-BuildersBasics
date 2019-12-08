@@ -13,6 +13,7 @@ import net.minecraft.world.biome.BirchForestBiome;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -70,6 +71,11 @@ public class BuildBasics {
                     WHITE_CANDLE, ORANGE_CANDLE, MAGENTA_CANDLE, LIGHT_BLUE_CANDLE, YELLOW_CANDLE, LIME_CANDLE, PINK_CANDLE, GRAY_CANDLE,
                     LIGHT_GRAY_CANDLE, CYAN_CANDLE, PURPLE_CANDLE, BLUE_CANDLE, BROWN_CANDLE, GREEN_CANDLE, RED_CANDLE, BLACK_CANDLE
             );
+            if (ModList.get().isLoaded("bloomful")) {
+                event.getRegistry().registerAll(
+                        WISTERIA_BOARDS, WISTERIA_GLASS_DOOR
+                );
+            }
         }
 
         @SubscribeEvent
@@ -187,6 +193,11 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(GREEN_CANDLE, decoration).setRegistryName("green_candle"));
             event.getRegistry().register(new BlockItem(RED_CANDLE, decoration).setRegistryName("red_candle"));
             event.getRegistry().register(new BlockItem(BLACK_CANDLE, decoration).setRegistryName("black_candle"));
+
+            if (ModList.get().isLoaded("bloomful")) {
+                event.getRegistry().register(new BlockItem(WISTERIA_BOARDS, building).setRegistryName("wisteria_boards"));
+                event.getRegistry().register(new BlockItem(WISTERIA_GLASS_DOOR, redstone).setRegistryName("wisteria_glass_door"));
+            }
         }
     }
 }
