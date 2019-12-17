@@ -1,8 +1,8 @@
 {
     "parent": "block/stairs",
     "textures": {
-        "bottom": "block/polished_stone",
-        "top": "block/polished_stone",
-        "side": "block/polished_stone"
+        "bottom": "buildbasics:block/polished_stone",
+        "top": "buildbasics:block/polished_stone",
+        "side": "buildbasics:block/polished_stone"
     }
 }

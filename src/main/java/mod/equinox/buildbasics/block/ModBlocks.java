@@ -8,7 +8,7 @@ import net.minecraft.item.DyeColor;
 import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
-    //public static Block SMOOTH_STONE_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK,MaterialColor.STONE).hardnessAndResistance(2.0F, 6.0F)).setRegistryName("smooth_stone_stairs");
+    public static Block SMOOTH_STONE_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK,MaterialColor.STONE).hardnessAndResistance(2.0F, 6.0F)).setRegistryName("smooth_stone_stairs");
     public static Block POLISHED_STONE = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("polished_stone");
     public static Block SMALL_STONE_BRICKS = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("small_stone_bricks");
     public static Block STONE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("stone_pillar");
