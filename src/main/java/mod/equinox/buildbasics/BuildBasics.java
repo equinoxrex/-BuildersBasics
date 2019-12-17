@@ -54,7 +54,7 @@ public class BuildBasics {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().registerAll(
-                    SMOOTH_STONE_STAIRS,
+                    SMOOTH_STONE_STAIRS, CRACKED_STONE_BRICK_STAIRS, CRACKED_STONE_BRICK_SLABS,
                     POLISHED_STONE, SMALL_STONE_BRICKS, STONE_PILLAR, GRANITE_BRICKS, SMALL_GRANITE_BRICKS, GRANITE_PILLAR, CHISELED_GRANITE,
                     DIORITE_BRICKS, SMALL_DIORITE_BRICKS, DIORITE_PILLAR, CHISELED_DIORITE, ANDESITE_BRICKS, SMALL_ANDESITE_BRICKS, ANDESITE_PILLAR, CHISELED_ANDESITE, TERRACOTTA_BRICKS,
                     WHITE_TERRACOTTA_BRICKS, ORANGE_TERRACOTTA_BRICKS, MAGENTA_TERRACOTTA_BRICKS, LIGHT_BLUE_TERRACOTTA_BRICKS, YELLOW_TERRACOTTA_BRICKS, LIME_TERRACOTTA_BRICKS, PINK_TERRACOTTA_BRICKS, GRAY_TERRACOTTA_BRICKS,
@@ -88,6 +88,8 @@ public class BuildBasics {
             Item.Properties redstone = new Item.Properties()
                     .group(ItemGroup.REDSTONE);
             event.getRegistry().register(new BlockItem(SMOOTH_STONE_STAIRS, building).setRegistryName("smooth_stone_stairs"));
+            event.getRegistry().register(new BlockItem(CRACKED_STONE_BRICK_STAIRS, building).setRegistryName("cracked_stone_brick_stairs"));
+            event.getRegistry().register(new BlockItem(CRACKED_STONE_BRICK_SLABS, building).setRegistryName("cracked_stone_brick_slabs"));
 
             event.getRegistry().register(new BlockItem(POLISHED_STONE, building).setRegistryName("polished_stone"));
             event.getRegistry().register(new BlockItem(SMALL_STONE_BRICKS, building).setRegistryName("small_stone_bricks"));
@@ -208,6 +210,29 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_DIORITE_BRICK_STAIRS, building).setRegistryName("small_diorite_brick_stairs"));
             event.getRegistry().register(new BlockItem(ANDESITE_BRICK_STAIRS, building).setRegistryName("andesite_brick_stairs"));
             event.getRegistry().register(new BlockItem(SMALL_ANDESITE_BRICK_STAIRS, building).setRegistryName("small_andesite_brick_stairs"));
+            event.getRegistry().register(new BlockItem(TERRACOTTA_BRICK_STAIRS, building).setRegistryName("terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(WHITE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("white_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(ORANGE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("orange_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(MAGENTA_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("magenta_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("light_blue_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(YELLOW_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("yellow_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(LIME_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("lime_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(PINK_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("pink_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(GRAY_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("gray_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("light_gray_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(CYAN_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("cyan_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(PURPLE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("purple_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(BLUE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("blue_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(BROWN_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("brown_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(GREEN_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("green_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(RED_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("red_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(BLACK_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("black_terracotta_brick_stairs"));
+            event.getRegistry().register(new BlockItem(OAK_BOARD_STAIRS, building).setRegistryName("oak_board_stairs"));
+            event.getRegistry().register(new BlockItem(SPRUCE_BOARD_STAIRS, building).setRegistryName("spruce_board_stairs"));
+            event.getRegistry().register(new BlockItem(BIRCH_BOARD_STAIRS, building).setRegistryName("birch_board_stairs"));
+            event.getRegistry().register(new BlockItem(JUNGLE_BOARD_STAIRS, building).setRegistryName("jungle_board_stairs"));
+            event.getRegistry().register(new BlockItem(ACACIA_BOARD_STAIRS, building).setRegistryName("acacia_board_stairs"));
+            event.getRegistry().register(new BlockItem(DARK_OAK_BOARD_STAIRS, building).setRegistryName("dark_oak_board_stairs"));
 
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARDS, building).setRegistryName("wisteria_boards"));

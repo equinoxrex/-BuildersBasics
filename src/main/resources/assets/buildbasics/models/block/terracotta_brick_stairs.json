@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "buildbasics:block/terracotta_bricks",
+        "top": "buildbasics:block/terracotta_bricks",
+        "side": "buildbasics:block/terracotta_bricks"
+    }
+}
