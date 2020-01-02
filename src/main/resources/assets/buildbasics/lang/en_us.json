@@ -1,6 +1,7 @@
 {
   "block.buildbasics.smooth_stone_stairs": "Smooth Stone Stairs",
   "block.buildbasics.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+  "block.buildbasics.end_stone_stairs": "End Stone Stairs",
   "block.buildbasics.cracked_stone_brick_slabs": "Cracked Stone Brick Slabs",
 
   "block.buildbasics.polished_stone": "Polished Stone",
@@ -139,6 +140,8 @@
   "block.buildbasics.green_terracotta_brick_stairs": "Green Terracotta Brick Stairs",
   "block.buildbasics.red_terracotta_brick_stairs": "Red Terracotta Brick Stairs",
   "block.buildbasics.black_terracotta_brick_stairs": "Black Terracotta Brick Stairs",
+  "block.buildbasics.dark_prismarine_brick_stairs": "Dark Prismarine Brick Stairs",
+  "block.buildbasics.small_end_stone_brick_stairs": "Small End Stone Brick Stairs",
   "block.buildbasics.oak_board_stairs": "Oak Board Stairs",
   "block.buildbasics.spruce_board_stairs": "Spruce Board Stairs",
   "block.buildbasics.birch_board_stairs": "Birch Board Stairs",

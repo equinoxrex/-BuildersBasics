@@ -10,6 +10,7 @@ import static net.minecraft.block.Blocks.*;
 public class ModBlocks {
     public static Block SMOOTH_STONE_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK,MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("smooth_stone_stairs");
     public static Block CRACKED_STONE_BRICK_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("cracked_stone_brick_stairs");
+    public static Block END_STONE_STAIRS = new StairsBlock(() -> END_STONE.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(3.0F, 9.0F)).setRegistryName("end_stone_stairs");
     public static Block CRACKED_STONE_BRICK_SLABS = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("cracked_stone_brick_slabs");
 
     public static Block POLISHED_STONE = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("polished_stone");
@@ -144,6 +145,8 @@ public class ModBlocks {
     public static Block GREEN_TERRACOTTA_BRICK_STAIRS = new StairsBlock(() -> GREEN_TERRACOTTA_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.GREEN_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("green_terracotta_brick_stairs");
     public static Block RED_TERRACOTTA_BRICK_STAIRS = new StairsBlock(() -> RED_TERRACOTTA_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.RED_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("red_terracotta_brick_stairs");
     public static Block BLACK_TERRACOTTA_BRICK_STAIRS = new StairsBlock(() -> BLACK_TERRACOTTA_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.BLACK_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("black_terracotta_brick_stairs");
+    public static Block DARK_PRISMARINE_BRICK_STAIRS = new StairsBlock(() -> DARK_PRISMARINE_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("dark_prismarine_brick_stairs");
+    public static Block SMALL_END_STONE_BRICK_STAIRS = new StairsBlock(() -> SMALL_END_STONE_BRICKS.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("small_end_stone_brick_stairs");
     public static Block OAK_BOARD_STAIRS = new StairsBlock(() -> OAK_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("oak_board_stairs");
     public static Block SPRUCE_BOARD_STAIRS = new StairsBlock(() -> SPRUCE_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_board_stairs");
     public static Block BIRCH_BOARD_STAIRS = new StairsBlock(() -> BIRCH_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("birch_board_stairs");
