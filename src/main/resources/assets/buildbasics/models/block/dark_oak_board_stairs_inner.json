@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "buildbasics:block/dark_oak_boards",
+        "top": "buildbasics:block/dark_oak_boards",
+        "side": "buildbasics:block/dark_oak_boards"
+    }
+}
