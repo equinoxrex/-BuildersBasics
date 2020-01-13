@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "buildbasics:block/oak_boards",
+        "top": "buildbasics:block/oak_boards",
+        "side": "buildbasics:block/oak_boards"
+    }
+}

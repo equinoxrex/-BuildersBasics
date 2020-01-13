@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "buildbasics:block/birch_boards",
+        "top": "buildbasics:block/birch_boards",
+        "side": "buildbasics:block/birch_boards"
+    }
+}

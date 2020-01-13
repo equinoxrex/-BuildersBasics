@@ -1,7 +1,7 @@
 {
     "variants": {
-        "type=bottom": { "model": "buildbasics:block/cracked_stone_brick_slabs" },
-        "type=top": { "model": "buildbasics:block/cracked_stone_brick_slabs_top" },
-        "type=double": { "model": "block/cracked_stone_bricks" }
+        "type=bottom": { "model": "buildbasics:block/polished_stone_slab" },
+        "type=top": { "model": "buildbasics:block/polished_stone_slab_top" },
+        "type=double": { "model": "block/polished_stone" }
     }
 }
