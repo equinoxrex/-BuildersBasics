@@ -1,5 +1,5 @@
 {
-    "parent": "block/outer_stairs",
+    "parent": "block/slab_top",
     "textures": {
         "bottom": "buildbasics:block/light_blue_terracotta_bricks",
         "top": "buildbasics:block/light_blue_terracotta_bricks",
