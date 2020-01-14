@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/oak_board_slab" },
         "type=top": { "model": "buildbasics:block/oak_board_slab_top" },
-        "type=double": { "model": "block/oak_boards" }
+        "type=double": { "model": "buildbasics:block/oak_boards" }
     }
 }

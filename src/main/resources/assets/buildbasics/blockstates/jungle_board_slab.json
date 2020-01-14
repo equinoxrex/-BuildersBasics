@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/jungle_board_slab" },
         "type=top": { "model": "buildbasics:block/jungle_board_slab_top" },
-        "type=double": { "model": "block/jungle_boards" }
+        "type=double": { "model": "buildbasics:block/jungle_boards" }
     }
 }

@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/end_stone_slab" },
         "type=top": { "model": "buildbasics:block/end_stone_slab_top" },
-        "type=double": { "model": "block/end_stones" }
+        "type=double": { "model": "block/end_stone" }
     }
 }

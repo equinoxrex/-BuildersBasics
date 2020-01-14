@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/acacia_board_slab" },
         "type=top": { "model": "buildbasics:block/acacia_board_slab_top" },
-        "type=double": { "model": "block/acacia_boards" }
+        "type=double": { "model": "buildbasics:block/acacia_boards" }
     }
 }

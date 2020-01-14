@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "buildbasics:block/andesite_bricks",
+        "top": "buildbasics:block/andesite_bricks",
+        "side": "buildbasics:block/andesite_bricks"
+    }
+}

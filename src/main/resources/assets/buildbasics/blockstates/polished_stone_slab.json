@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/polished_stone_slab" },
         "type=top": { "model": "buildbasics:block/polished_stone_slab_top" },
-        "type=double": { "model": "block/polished_stone" }
+        "type=double": { "model": "buildbasics:block/polished_stone" }
     }
 }

@@ -2,6 +2,6 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/birch_board_slab" },
         "type=top": { "model": "buildbasics:block/birch_board_slab_top" },
-        "type=double": { "model": "block/birch_boards" }
+        "type=double": { "model": "buildbasics:block/birch_boards" }
     }
 }

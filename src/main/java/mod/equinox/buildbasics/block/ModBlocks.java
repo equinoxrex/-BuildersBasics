@@ -155,7 +155,7 @@ public class ModBlocks {
     public static Block ACACIA_BOARD_STAIRS = new StairsBlock(() -> ACACIA_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("acacia_board_stairs");
     public static Block DARK_OAK_BOARD_STAIRS = new StairsBlock(() -> DARK_OAK_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_board_stairs");
 
-    public static Block POLISHED_STONE_SLAB = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("polished_stone_slabs");
+    public static Block POLISHED_STONE_SLAB = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("polished_stone_slab");
     public static Block SMALL_STONE_BRICK_SLAB = new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("small_stone_brick_slab");
     public static Block GRANITE_BRICK_SLAB = new SlabBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("granite_brick_slab");
     public static Block SMALL_GRANITE_BRICK_SLAB = new SlabBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("small_granite_brick_slab");
