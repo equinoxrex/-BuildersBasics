@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "buildbasics:oak_boards"
+    }
+  },
+  "result": {
+    "item": "buildbasics:oak_board_stairs",
+    "count": 4
+  }
+}
