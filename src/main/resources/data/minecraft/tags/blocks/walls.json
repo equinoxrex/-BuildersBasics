@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "buildbasics:small_stone_brick_wall",
+    "buildbasics:granite_brick_wall",
+    "buildbasics:small_granite_brick_wall",
+    "buildbasics:diorite_brick_wall",
+    "buildbasics:small_diorite_brick_wall",
+    "buildbasics:andesite_brick_wall",
+    "buildbasics:small_andesite_brick_wall",
+    "buildbasics:prismarine_brick_wall",
+    "buildbasics:dark_prismarine_wall",
+    "buildbasics:dark_prismarine_brick_wall",
+    "buildbasics:small_end_stone_brick_wall",
+    "buildbasics:oak_board_wall",
+    "buildbasics:spruce_board_wall",
+    "buildbasics:birch_board_wall",
+    "buildbasics:jungle_board_wall",
+    "buildbasics:acacia_board_wall",
+    "buildbasics:dark_oak_board_wall"
+  ]
+}
