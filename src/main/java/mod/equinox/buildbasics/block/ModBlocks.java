@@ -8,6 +8,8 @@ import net.minecraft.item.DyeColor;
 import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
+    public static Block IRON_CHAIN = new ChainBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("iron_chain");
+
     public static Block SMOOTH_STONE_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK,MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("smooth_stone_stairs");
     public static Block CRACKED_STONE_BRICK_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("cracked_stone_brick_stairs");
     public static Block END_STONE_STAIRS = new StairsBlock(() -> END_STONE.getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(3.0F, 9.0F)).setRegistryName("end_stone_stairs");
@@ -29,6 +31,7 @@ public class ModBlocks {
     public static Block SMALL_ANDESITE_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F,6.0F)).setRegistryName("small_andesite_bricks");
     public static Block ANDESITE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("andesite_pillar");
     public static Block CHISELED_ANDESITE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("chiseled_andesite");
+
     public static Block TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("terracotta_bricks");
     public static Block WHITE_TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("white_terracotta_bricks");
     public static Block ORANGE_TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.ORANGE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("orange_terracotta_bricks");
@@ -62,6 +65,7 @@ public class ModBlocks {
     public static Block GREEN_GLAZED_TERRACOTTA_PILLAR = new GlazedTerracottaPillarBlock(Block.Properties.create(Material.ROCK, DyeColor.GREEN).hardnessAndResistance(1.4F)).setRegistryName("green_glazed_terracotta_pillar");
     public static Block RED_GLAZED_TERRACOTTA_PILLAR = new GlazedTerracottaPillarBlock(Block.Properties.create(Material.ROCK, DyeColor.RED).hardnessAndResistance(1.4F)).setRegistryName("red_glazed_terracotta_pillar");
     public static Block BLACK_GLAZED_TERRACOTTA_PILLAR = new GlazedTerracottaPillarBlock(Block.Properties.create(Material.ROCK, DyeColor.BLACK).hardnessAndResistance(1.4F)).setRegistryName("black_glazed_terracotta_pillar");
+
     public static Block WHITE_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("white_purpur_block");
     public static Block ORANGE_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("orange_purpur_block");
     public static Block MAGENTA_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.MAGENTA).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("magenta_purpur_block");
@@ -78,7 +82,6 @@ public class ModBlocks {
     public static Block GREEN_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.GREEN).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("green_purpur_block");
     public static Block RED_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.RED).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("red_purpur_block");
     public static Block BLACK_PURPUR = new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("black_purpur_block");
-    public static Block IRON_CHAIN = new ChainBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("iron_chain");
     public static Block PRISMARINE_TILES = new Block(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("prismarine_tiles");
     public static Block PRISMARINE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("prismarine_pillar");
     public static Block CHISELED_PRISMARINE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("chiseled_prismarine");
@@ -90,6 +93,7 @@ public class ModBlocks {
     public static Block SMALL_END_STONE_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("small_end_stone_bricks");
     public static Block END_STONE_TILES = new Block(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("end_stone_tiles");
     public static Block END_STONE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("end_stone_pillar");
+
     public static Block OAK_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("oak_boards");
     public static Block SPRUCE_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_boards");
     public static Block BIRCH_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("birch_boards");
@@ -104,6 +108,16 @@ public class ModBlocks {
     public static Block DARK_OAK_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_glass_door");
     public static Block IRON_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.IRON).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_glass_door");
     public static Block GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_door");
+
+    public static Block OAK_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("oak_glass_trapdoor");
+    public static Block SPRUCE_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_glass_trapdoor");
+    public static Block BIRCH_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("birch_glass_trapdoor");
+    public static Block JUNGLE_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("jungle_glass_trapdoor");
+    public static Block ACACIA_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("acacia_glass_trapdoor");
+    public static Block DARK_OAK_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_glass_trapdoor");
+    public static Block IRON_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.IRON).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_glass_trapdoor");
+    public static Block GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_trapdoor");
+
     public static Block WHITE_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.SNOW).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("white_candle");
     public static Block ORANGE_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.ADOBE).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("orange_candle");
     public static Block MAGENTA_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.MAGENTA).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("magenta_candle");
