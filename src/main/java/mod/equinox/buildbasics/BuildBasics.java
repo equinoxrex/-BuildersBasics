@@ -66,8 +66,8 @@ public class BuildBasics {
                     PRISMARINE_TILES, PRISMARINE_PILLAR, CHISELED_PRISMARINE, DARK_PRISMARINE_BRICKS, DARK_PRISMARINE_TILES, DARK_PRISMARINE_PILLAR, CHISELED_DARK_PRISMARINE, ABYSSAL_LANTERN,
                     SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR,
                     OAK_BOARDS, SPRUCE_BOARDS, BIRCH_BOARDS, JUNGLE_BOARDS, ACACIA_BOARDS, DARK_OAK_BOARDS,
-                    OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, GLASS_DOOR,
-                    OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, GLASS_TRAPDOOR,
+                    GLASS_DOOR, OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, IRON_BAR_DOOR,
+                    GLASS_TRAPDOOR, OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, IRON_BAR_TRAPDOOR,
                     WHITE_CANDLE, ORANGE_CANDLE, MAGENTA_CANDLE, LIGHT_BLUE_CANDLE, YELLOW_CANDLE, LIME_CANDLE, PINK_CANDLE, GRAY_CANDLE,
                     LIGHT_GRAY_CANDLE, CYAN_CANDLE, PURPLE_CANDLE, BLUE_CANDLE, BROWN_CANDLE, GREEN_CANDLE, RED_CANDLE, BLACK_CANDLE,
                     SMOOTH_STONE_STAIRS, CRACKED_STONE_BRICK_STAIRS, POLISHED_STONE_STAIRS, SMALL_STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, SMALL_GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, SMALL_DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS, SMALL_ANDESITE_BRICK_STAIRS, TERRACOTTA_BRICK_STAIRS,
@@ -187,6 +187,7 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(JUNGLE_BOARDS, building).setRegistryName("jungle_boards"));
             event.getRegistry().register(new BlockItem(ACACIA_BOARDS, building).setRegistryName("acacia_boards"));
             event.getRegistry().register(new BlockItem(DARK_OAK_BOARDS, building).setRegistryName("dark_oak_boards"));
+            event.getRegistry().register(new BlockItem(GLASS_DOOR, redstone).setRegistryName("glass_door"));
             event.getRegistry().register(new BlockItem(OAK_GLASS_DOOR, redstone).setRegistryName("oak_glass_door"));
             event.getRegistry().register(new BlockItem(SPRUCE_GLASS_DOOR, redstone).setRegistryName("spruce_glass_door"));
             event.getRegistry().register(new BlockItem(BIRCH_GLASS_DOOR, redstone).setRegistryName("birch_glass_door"));
@@ -194,7 +195,8 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(ACACIA_GLASS_DOOR, redstone).setRegistryName("acacia_glass_door"));
             event.getRegistry().register(new BlockItem(DARK_OAK_GLASS_DOOR, redstone).setRegistryName("dark_oak_glass_door"));
             event.getRegistry().register(new BlockItem(IRON_GLASS_DOOR, redstone).setRegistryName("iron_glass_door"));
-            event.getRegistry().register(new BlockItem(GLASS_DOOR, redstone).setRegistryName("glass_door"));
+            event.getRegistry().register(new BlockItem(IRON_BAR_DOOR, redstone).setRegistryName("iron_bar_door"));
+            event.getRegistry().register(new BlockItem(GLASS_TRAPDOOR, redstone).setRegistryName("glass_trapdoor"));
             event.getRegistry().register(new BlockItem(OAK_GLASS_TRAPDOOR, redstone).setRegistryName("oak_glass_trapdoor"));
             event.getRegistry().register(new BlockItem(SPRUCE_GLASS_TRAPDOOR, redstone).setRegistryName("spruce_glass_trapdoor"));
             event.getRegistry().register(new BlockItem(BIRCH_GLASS_TRAPDOOR, redstone).setRegistryName("birch_glass_trapdoor"));
@@ -202,7 +204,7 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(ACACIA_GLASS_TRAPDOOR, redstone).setRegistryName("acacia_glass_trapdoor"));
             event.getRegistry().register(new BlockItem(DARK_OAK_GLASS_TRAPDOOR, redstone).setRegistryName("dark_oak_glass_trapdoor"));
             event.getRegistry().register(new BlockItem(IRON_GLASS_TRAPDOOR, redstone).setRegistryName("iron_glass_trapdoor"));
-            event.getRegistry().register(new BlockItem(GLASS_TRAPDOOR, redstone).setRegistryName("glass_trapdoor"));
+            event.getRegistry().register(new BlockItem(IRON_BAR_TRAPDOOR, redstone).setRegistryName("iron_bar_trapdoor"));
 
             event.getRegistry().register(new BlockItem(WHITE_CANDLE, decoration).setRegistryName("white_candle"));
             event.getRegistry().register(new BlockItem(ORANGE_CANDLE, decoration).setRegistryName("orange_candle"));

@@ -100,6 +100,7 @@ public class ModBlocks {
     public static Block JUNGLE_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("jungle_boards");
     public static Block ACACIA_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("acacia_boards");
     public static Block DARK_OAK_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_boards");
+    public static Block GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_door");
     public static Block OAK_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("oak_glass_door");
     public static Block SPRUCE_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_glass_door");
     public static Block BIRCH_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("birch_glass_door");
@@ -107,8 +108,9 @@ public class ModBlocks {
     public static Block ACACIA_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("acacia_glass_door");
     public static Block DARK_OAK_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_glass_door");
     public static Block IRON_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.IRON).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_glass_door");
-    public static Block GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_door");
+    public static Block IRON_BAR_DOOR = new GlassDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_bar_door");
 
+    public static Block GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_trapdoor");
     public static Block OAK_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("oak_glass_trapdoor");
     public static Block SPRUCE_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_glass_trapdoor");
     public static Block BIRCH_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("birch_glass_trapdoor");
@@ -116,7 +118,7 @@ public class ModBlocks {
     public static Block ACACIA_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("acacia_glass_trapdoor");
     public static Block DARK_OAK_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(3.0F).sound(SoundType.WOOD)).setRegistryName("dark_oak_glass_trapdoor");
     public static Block IRON_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.IRON).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_glass_trapdoor");
-    public static Block GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS)).setRegistryName("glass_trapdoor");
+    public static Block IRON_BAR_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F).sound(SoundType.METAL)).setRegistryName("iron_bar_trapdoor");
 
     public static Block WHITE_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.SNOW).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("white_candle");
     public static Block ORANGE_CANDLE = new CandleBlock(Block.Properties.create(Material.CLAY, MaterialColor.ADOBE).hardnessAndResistance(0.3F).sound(SoundType.SLIME).lightValue(5)).setRegistryName("orange_candle");
