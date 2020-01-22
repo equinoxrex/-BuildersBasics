@@ -1,6 +1,7 @@
 {
-    "parent": "block/template_orientable_trapdoor_top",
+    "parent": "buildbasics:block/template_transparent_trapdoor_top",
     "textures": {
-        "texture": "buildbasics:block/iron_bar_trapdoor"
+        "texture": "buildbasics:block/iron_bar_trapdoor",
+        "side": "buildbasics:block/iron_bar_trapdoor_side"
     }
 }

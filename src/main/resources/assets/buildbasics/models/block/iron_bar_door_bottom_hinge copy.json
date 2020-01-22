@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "buildbasics:block/iron_bar_door_bottom",
+        "top": "buildbasics:block/iron_bar_door_top"
+    }
+}
