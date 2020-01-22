@@ -34,7 +34,7 @@ import java.util.Random;
 public class WallLanternBlock extends Block {
     //protected static final VoxelShape SHAPE = VoxelShapes.or(Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 7.0D, 11.0D), Block.makeCuboidShape(6.0D, 7.0D, 6.0D, 10.0D, 9.0D, 10.0D));
     public static final DirectionProperty HORIZONTAL_FACING = HorizontalBlock.HORIZONTAL_FACING;
-    private static final Map<Direction, VoxelShape> SHAPES = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.makeCuboidShape(5.5D, 3.0D, 11.0D, 10.5D, 13.0D, 16.0D), Direction.SOUTH, Block.makeCuboidShape(5.5D, 3.0D, 0.0D, 10.5D, 13.0D, 5.0D), Direction.WEST, Block.makeCuboidShape(11.0D, 3.0D, 5.5D, 16.0D, 13.0D, 10.5D), Direction.EAST, Block.makeCuboidShape(0.0D, 3.0D, 5.5D, 5.0D, 13.0D, 10.5D)));
+    private static final Map<Direction, VoxelShape> SHAPES = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 11.0D, 15.0D, 16.0D), Direction.SOUTH, Block.makeCuboidShape(5.0D, 1.0D, 0.0D, 11.0D, 15.0D, 11.0D), Direction.WEST, Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 16.0D, 15.0D, 11.0D), Direction.EAST, Block.makeCuboidShape(0.0D, 1.0D, 5.0D, 11.0D, 15.0D, 11.0D)));
 
     protected WallLanternBlock(Block.Properties properties) {
         super(properties);
@@ -54,6 +54,10 @@ public class WallLanternBlock extends Block {
 
     public static VoxelShape func_220289_j(BlockState p_220289_0_) {
         return SHAPES.get(p_220289_0_.get(HORIZONTAL_FACING));
+    }
+
+    public BlockRenderLayer getRenderLayer() {
+        return BlockRenderLayer.CUTOUT;
     }
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
@@ -98,25 +102,25 @@ public class WallLanternBlock extends Block {
      * this method is unrelated to {@link randomTick} and {@link #needsRandomTick}, and will always be called regardless
      * of whether the block can receive random update ticks
      */
-    @OnlyIn(Dist.CLIENT)
-    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        Direction direction = stateIn.get(HORIZONTAL_FACING);
-        double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 0.7D;
-        double d2 = (double)pos.getZ() + 0.5D;
-        double d3 = 0.22D;
-        double d4 = 0.27D;
-        Direction direction1 = direction.getOpposite();
-        worldIn.addParticle(ParticleTypes.SMOKE, d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(ParticleTypes.FLAME, d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
-    }
+    //@OnlyIn(Dist.CLIENT)
+    //public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+    //    Direction direction = stateIn.get(HORIZONTAL_FACING);
+    //    double d0 = (double)pos.getX() + 0.5D;
+    //    double d1 = (double)pos.getY() + 0.7D;
+    //    double d2 = (double)pos.getZ() + 0.5D;
+    //    double d3 = 0.22D;
+    //    double d4 = 0.27D;
+    //    Direction direction1 = direction.getOpposite();
+    //    worldIn.addParticle(ParticleTypes.SMOKE, d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
+    //    worldIn.addParticle(ParticleTypes.FLAME, d0 + 0.27D * (double)direction1.getXOffset(), d1 + 0.22D, d2 + 0.27D * (double)direction1.getZOffset(), 0.0D, 0.0D, 0.0D);
+    //}
 
     /**
      * Returns the blockstate with the given rotation from the passed blockstate. If inapplicable, returns the passed
      * blockstate.
      * @deprecated call via {@link IBlockState#withRotation(Rotation)} whenever possible. Implementing/overriding is
      * fine.
-     */
+     *
     public BlockState rotate(BlockState state, Rotation rot) {
         return state.with(HORIZONTAL_FACING, rot.rotate(state.get(HORIZONTAL_FACING)));
     }

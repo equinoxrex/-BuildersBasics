@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": [ { "model": "buildbasics:block/wall_lantern"} ],
+        "facing=west": [ { "model": "buildbasics:block/wall_lantern", "y": 90} ],
+        "facing=north": [ { "model": "buildbasics:block/wall_lantern","y": 180} ],
+        "facing=east": [ { "model": "buildbasics:block/wall_lantern", "y": 270} ]
+    }
+}
