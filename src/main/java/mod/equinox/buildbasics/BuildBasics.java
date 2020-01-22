@@ -54,7 +54,7 @@ public class BuildBasics {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
             event.getRegistry().registerAll(
-                    IRON_CHAIN,
+                    IRON_CHAIN, //WALL_LANTERN,
                     POLISHED_STONE, SMALL_STONE_BRICKS, STONE_PILLAR, GRANITE_BRICKS, SMALL_GRANITE_BRICKS, GRANITE_PILLAR, CHISELED_GRANITE,
                     DIORITE_BRICKS, SMALL_DIORITE_BRICKS, DIORITE_PILLAR, CHISELED_DIORITE, ANDESITE_BRICKS, SMALL_ANDESITE_BRICKS, ANDESITE_PILLAR, CHISELED_ANDESITE, TERRACOTTA_BRICKS,
                     WHITE_TERRACOTTA_BRICKS, ORANGE_TERRACOTTA_BRICKS, MAGENTA_TERRACOTTA_BRICKS, LIGHT_BLUE_TERRACOTTA_BRICKS, YELLOW_TERRACOTTA_BRICKS, LIME_TERRACOTTA_BRICKS, PINK_TERRACOTTA_BRICKS, GRAY_TERRACOTTA_BRICKS,
@@ -102,6 +102,7 @@ public class BuildBasics {
                     .group(ItemGroup.REDSTONE);
 
             event.getRegistry().register(new BlockItem(IRON_CHAIN, decoration).setRegistryName("iron_chain"));
+            //event.getRegistry().register(new BlockItem(WALL_LANTERN, decoration).setRegistryName("wall_lantern"));
 
             event.getRegistry().register(new BlockItem(POLISHED_STONE, building).setRegistryName("polished_stone"));
             event.getRegistry().register(new BlockItem(SMALL_STONE_BRICKS, building).setRegistryName("small_stone_bricks"));

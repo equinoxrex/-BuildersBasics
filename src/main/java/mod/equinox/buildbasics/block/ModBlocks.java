@@ -9,6 +9,7 @@ import static net.minecraft.block.Blocks.*;
 
 public class ModBlocks {
     public static Block IRON_CHAIN = new ChainBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("iron_chain");
+    //public static Block WALL_LANTERN = new WallLanternBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL)).setRegistryName("wall_lantern");
 
     public static Block SMOOTH_STONE_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK,MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("smooth_stone_stairs");
     public static Block CRACKED_STONE_BRICK_STAIRS = new StairsBlock(() -> SMOOTH_STONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("cracked_stone_brick_stairs");
