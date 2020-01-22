@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "",
+    "###",
+    "###"
+
+  ],
+  "key": {
+    "#": {
+      "item": "buildbasics:spruce_boards"
+    }
+  },
+  "result": {
+    "item": "buildbasics:spruce_board_wall",
+    "count": 6
+  }
+}

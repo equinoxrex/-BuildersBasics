@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "buildbasics:dark_oak_glass_trapdoor",
+    "count": 2
+  }
+}

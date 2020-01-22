@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "buildbasics:glass_trapdoor",
+    "count": 2
+  }
+}

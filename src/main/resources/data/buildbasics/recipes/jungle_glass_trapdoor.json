@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_planks"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "buildbasics:jungle_glass_trapdoor",
+    "count": 2
+  }
+}

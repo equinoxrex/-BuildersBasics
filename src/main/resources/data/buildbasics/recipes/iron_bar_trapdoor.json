@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "G": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "buildbasics:iron_bar_trapdoor",
+    "count": 2
+  }
+}
