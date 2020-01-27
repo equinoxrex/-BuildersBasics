@@ -1,3 +1,6 @@
 {
-    "parent": "buildbasics:block/one_lime_candle"
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "buildbasics:item/lime_candle"
+    }
 }

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "buildbasics:block/blue_terracotta_bricks",
+        "top": "buildbasics:block/blue_terracotta_bricks",
+        "side": "buildbasics:block/blue_terracotta_bricks"
+    }
+}
