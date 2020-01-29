@@ -1,7 +1,7 @@
 {
     "variants": {
-        "type=bottom": { "model": "buildbasics:block/light_gray_terracotta_brick_slab" },
-        "type=top": { "model": "buildbasics:block/light_gray_terracotta_brick_slab_top" },
+        "type=bottom": { "model": "buildbasics:block/light_gray_purpur_block_slab" },
+        "type=top": { "model": "buildbasics:block/light_gray_purpur_block_slab_top" },
         "type=double": { "model": "buildbasics:block/light_gray_terracotta_bricks" }
     }
 }
