@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "buildbasics:block/wisteria_board_slab" },
+        "type=top": { "model": "buildbasics:block/wisteria_board_slab_top" },
+        "type=double": { "model": "buildbasics:block/wisteria_boards" }
+    }
+}

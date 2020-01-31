@@ -86,12 +86,12 @@ public class BuildBasics {
                     OAK_BOARD_SLAB, SPRUCE_BOARD_SLAB, BIRCH_BOARD_SLAB, JUNGLE_BOARD_SLAB, ACACIA_BOARD_SLAB, DARK_OAK_BOARD_SLAB,
                     SMALL_STONE_BRICK_WALL, GRANITE_BRICK_WALL, SMALL_GRANITE_BRICK_WALL, DIORITE_BRICK_WALL, SMALL_DIORITE_BRICK_WALL, ANDESITE_BRICK_WALL, SMALL_ANDESITE_BRICK_WALL,
                     PRISMARINE_BRICK_WALL, DARK_PRISMARINE_WALL, DARK_PRISMARINE_BRICK_WALL, SMALL_END_STONE_BRICK_WALL,
-                    OAK_BOARD_WALL, SPRUCE_BOARD_WALL, BIRCH_BOARD_WALL, JUNGLE_BOARD_WALL, ACACIA_BOARD_WALL, DARK_OAK_BOARD_WALL,
+                    //OAK_BOARD_WALL, SPRUCE_BOARD_WALL, BIRCH_BOARD_WALL, JUNGLE_BOARD_WALL, ACACIA_BOARD_WALL, DARK_OAK_BOARD_WALL,
                     RED_NETHER_BRICK_FENCE
             );
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().registerAll(
-                        WISTERIA_BOARDS, WISTERIA_GLASS_DOOR, WISTERIA_BOARD_STAIRS, WISTERIA_BOARD_SLAB, WISTERIA_BOARD_WALL
+                        WISTERIA_BOARDS, WISTERIA_GLASS_DOOR, WISTERIA_BOARD_STAIRS, WISTERIA_BOARD_SLAB//, WISTERIA_BOARD_WALL
                 );
             }
         }
@@ -344,12 +344,12 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(DARK_PRISMARINE_WALL, decoration).setRegistryName("dark_prismarine_wall"));
             event.getRegistry().register(new BlockItem(DARK_PRISMARINE_BRICK_WALL, decoration).setRegistryName("dark_prismarine_brick_wall"));
             event.getRegistry().register(new BlockItem(SMALL_END_STONE_BRICK_WALL, decoration).setRegistryName("small_end_stone_brick_wall"));
-            event.getRegistry().register(new BlockItem(OAK_BOARD_WALL, decoration).setRegistryName("oak_board_wall"));
-            event.getRegistry().register(new BlockItem(SPRUCE_BOARD_WALL, decoration).setRegistryName("spruce_board_wall"));
-            event.getRegistry().register(new BlockItem(BIRCH_BOARD_WALL, decoration).setRegistryName("birch_board_wall"));
-            event.getRegistry().register(new BlockItem(JUNGLE_BOARD_WALL, decoration).setRegistryName("jungle_board_wall"));
-            event.getRegistry().register(new BlockItem(ACACIA_BOARD_WALL, decoration).setRegistryName("acacia_board_wall"));
-            event.getRegistry().register(new BlockItem(DARK_OAK_BOARD_WALL, decoration).setRegistryName("dark_oak_board_wall"));
+            //event.getRegistry().register(new BlockItem(OAK_BOARD_WALL, decoration).setRegistryName("oak_board_wall"));
+            //event.getRegistry().register(new BlockItem(SPRUCE_BOARD_WALL, decoration).setRegistryName("spruce_board_wall"));
+            //event.getRegistry().register(new BlockItem(BIRCH_BOARD_WALL, decoration).setRegistryName("birch_board_wall"));
+            //event.getRegistry().register(new BlockItem(JUNGLE_BOARD_WALL, decoration).setRegistryName("jungle_board_wall"));
+            //event.getRegistry().register(new BlockItem(ACACIA_BOARD_WALL, decoration).setRegistryName("acacia_board_wall"));
+            //event.getRegistry().register(new BlockItem(DARK_OAK_BOARD_WALL, decoration).setRegistryName("dark_oak_board_wall"));
 
             event.getRegistry().register(new BlockItem(RED_NETHER_BRICK_FENCE, decoration).setRegistryName("red_nether_brick_fence"));
 
@@ -358,7 +358,7 @@ public class BuildBasics {
                 event.getRegistry().register(new BlockItem(WISTERIA_GLASS_DOOR, redstone).setRegistryName("wisteria_glass_door"));
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_STAIRS, building).setRegistryName("wisteria_board_stairs"));
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_SLAB, building).setRegistryName("wisteria_board_slab"));
-                event.getRegistry().register(new BlockItem(WISTERIA_BOARD_WALL, decoration).setRegistryName("wisteria_board_wall"));
+                //event.getRegistry().register(new BlockItem(WISTERIA_BOARD_WALL, decoration).setRegistryName("wisteria_board_wall"));
 
             }
         }
