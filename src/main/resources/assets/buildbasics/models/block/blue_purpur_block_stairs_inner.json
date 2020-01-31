@@ -1,8 +1,8 @@
 {
     "parent": "block/inner_stairs",
     "textures": {
-        "bottom": "buildbasics:block/blue_terracotta_bricks",
-        "top": "buildbasics:block/blue_terracotta_bricks",
-        "side": "buildbasics:block/blue_terracotta_bricks"
+        "bottom": "buildbasics:block/blue_purpur_block",
+        "top": "buildbasics:block/blue_purpur_block",
+        "side": "buildbasics:block/blue_purpur_block"
     }
 }

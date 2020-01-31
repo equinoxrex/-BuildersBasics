@@ -2,7 +2,7 @@
     "variants": {
         "type=bottom": { "model": "buildbasics:block/green_purpur_block_slab" },
         "type=top": { "model": "buildbasics:block/green_purpur_block_slab_top" },
-        "type=double": { "model": "buildbasics:block/green_terracotta_bricks" }
+        "type=double": { "model": "buildbasics:block/green_purpur_block" }
     }
 }
 
