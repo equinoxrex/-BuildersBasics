@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "buildbasics:yellow_purpur_block"
+    }
+  },
+  "result": {
+    "item": "buildbasics:yellow_purpur_block_slab",
+    "count": 4
+  }
+}
