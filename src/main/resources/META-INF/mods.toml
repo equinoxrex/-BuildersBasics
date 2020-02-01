@@ -27,7 +27,7 @@ credits="Thanks to everyone who suggested ideas and critiqued our textures on th
 authors="Arobazzz and Equinox" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Builder's Basics is a mod made for builder's (obviously).
+Builder's Basics is a mod made for builders (obviously).
 It adds a bunch of new and unique building and decoration blocks while trying to keep in the style of vanilla Minecraft.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.

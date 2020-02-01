@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "buildbasics:lime_candle"
+      "buildbasics:small_stone_bricks"
     ]
   },
   "criteria": {
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:slime_ball"
+            "item": "minecraft:stone_bricks"
           }
         ]
       }
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "buildbasics:lime_candle"
+        "recipe": "buildbasics:small_stone_bricks"
       }
     }
   },
