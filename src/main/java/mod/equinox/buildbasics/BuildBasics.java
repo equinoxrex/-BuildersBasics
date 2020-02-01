@@ -91,7 +91,7 @@ public class BuildBasics {
             );
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().registerAll(
-                        WISTERIA_BOARDS, WISTERIA_GLASS_DOOR, WISTERIA_BOARD_STAIRS, WISTERIA_BOARD_SLAB//, WISTERIA_BOARD_WALL
+                        WISTERIA_BOARDS, WISTERIA_GLASS_DOOR, WISTERIA_GLASS_TRAPDOOR, WISTERIA_BOARD_STAIRS, WISTERIA_BOARD_SLAB//, WISTERIA_BOARD_WALL
                 );
             }
         }
@@ -356,6 +356,7 @@ public class BuildBasics {
             if (ModList.get().isLoaded("bloomful")) {
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARDS, building).setRegistryName("wisteria_boards"));
                 event.getRegistry().register(new BlockItem(WISTERIA_GLASS_DOOR, redstone).setRegistryName("wisteria_glass_door"));
+                event.getRegistry().register(new BlockItem(WISTERIA_GLASS_TRAPDOOR, redstone).setRegistryName("wisteria_glass_trapdoor"));
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_STAIRS, building).setRegistryName("wisteria_board_stairs"));
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_SLAB, building).setRegistryName("wisteria_board_slab"));
                 //event.getRegistry().register(new BlockItem(WISTERIA_BOARD_WALL, decoration).setRegistryName("wisteria_board_wall"));
