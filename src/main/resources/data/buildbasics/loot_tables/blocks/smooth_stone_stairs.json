@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:smooth_stone_stairs_stairs"
+          "name": "buildbasics:smooth_stone_stairs"
         }
       ],
       "conditions": [

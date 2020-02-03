@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "buildbasics:gray_glazed_terracotta_pillar"
+    ]
+  },
+  "criteria": {
+    "has_terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gray_glazed_terracotta"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "buildbasics:gray_glazed_terracotta_pillar"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_terracotta",
+      "has_the_recipe"
+    ]
+  ]
+}
