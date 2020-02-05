@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:polished_stone"
+            "item": "buildbasics:polished_stone"
           }
         ]
       }

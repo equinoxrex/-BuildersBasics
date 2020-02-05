@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:terracotta_bricks"
+            "item": "buildbasics:terracotta_bricks"
           }
         ]
       }

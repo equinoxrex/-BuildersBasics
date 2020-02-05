@@ -69,6 +69,7 @@
   "block.buildbasics.green_purpur_block": "Green Purpur Block",
   "block.buildbasics.red_purpur_block": "Red Purpur Block",
   "block.buildbasics.black_purpur_block": "Black Purpur Block",
+
   "block.buildbasics.prismarine_tiles": "Prismarine Tiles",
   "block.buildbasics.prismarine_pillar": "Prismarine Pillar",
   "block.buildbasics.chiseled_prismarine": "Chiseled Prismarine Bricks",
@@ -78,7 +79,7 @@
   "block.buildbasics.chiseled_dark_prismarine": "Chiseled Dark Prismarine Bricks",
   "block.buildbasics.abyssal_lantern": "Abyssal Lantern",
   "block.buildbasics.small_end_stone_bricks": "Small End Stone Bricks",
-  "block.buildbasics.end_stone_tiles": "End Stone Tilems",
+  "block.buildbasics.end_stone_tiles": "End Stone Tiles",
   "block.buildbasics.end_stone_pillar": "End Stone Pillar",
   "block.buildbasics.iron_chain": "Iron Chain",
   "block.buildbasics.wall_lantern": "Wall Lantern",

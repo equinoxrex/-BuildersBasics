@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "buildbasics:yellow_terracotta"
+            "item": "minecraft:yellow_terracotta"
           }
         ]
       }
