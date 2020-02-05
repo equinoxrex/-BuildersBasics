@@ -95,6 +95,11 @@ public class BuildBasics {
                         WISTERIA_BOARDS, WISTERIA_GLASS_DOOR, WISTERIA_GLASS_TRAPDOOR, WISTERIA_BOARD_STAIRS, WISTERIA_BOARD_SLAB//, WISTERIA_BOARD_WALL
                 );
             }
+            if (ModList.get().isLoaded("upgrade_aquatic")) {
+                event.getRegistry().registerAll(
+                        DRIFTWOOD_BOARDS, DRIFTWOOD_GLASS_DOOR, DRIFTWOOD_GLASS_TRAPDOOR, DRIFTWOOD_BOARD_STAIRS, DRIFTWOOD_BOARD_SLAB//, DRIFTWOOD_BOARD_WALL
+                );
+            }
         }
 
         @SubscribeEvent
@@ -363,6 +368,16 @@ public class BuildBasics {
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_STAIRS, building).setRegistryName("wisteria_board_stairs"));
                 event.getRegistry().register(new BlockItem(WISTERIA_BOARD_SLAB, building).setRegistryName("wisteria_board_slab"));
                 //event.getRegistry().register(new BlockItem(WISTERIA_BOARD_WALL, decoration).setRegistryName("wisteria_board_wall"));
+
+            }
+
+            if (ModList.get().isLoaded("upgrade_aquatic")) {
+                event.getRegistry().register(new BlockItem(DRIFTWOOD_BOARDS, building).setRegistryName("driftwood_boards"));
+                event.getRegistry().register(new BlockItem(DRIFTWOOD_GLASS_DOOR, redstone).setRegistryName("driftwood_glass_door"));
+                event.getRegistry().register(new BlockItem(DRIFTWOOD_GLASS_TRAPDOOR, redstone).setRegistryName("driftwood_glass_trapdoor"));
+                event.getRegistry().register(new BlockItem(DRIFTWOOD_BOARD_STAIRS, building).setRegistryName("driftwood_board_stairs"));
+                event.getRegistry().register(new BlockItem(DRIFTWOOD_BOARD_SLAB, building).setRegistryName("driftwood_board_slab"));
+                //event.getRegistry().register(new BlockItem(DRIFTWOOD_BOARD_WALL, decoration).setRegistryName("driftwood_board_wall"));
 
             }
         }
