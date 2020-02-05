@@ -32,6 +32,7 @@ public class ModBlocks {
     public static Block SMALL_ANDESITE_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F,6.0F)).setRegistryName("small_andesite_bricks");
     public static Block ANDESITE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("andesite_pillar");
     public static Block CHISELED_ANDESITE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("chiseled_andesite");
+    public static Block COBBLESTONE_BRICKS = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2F, 6.0F)).setRegistryName("cobblestone_bricks");
 
     public static Block TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("terracotta_bricks");
     public static Block WHITE_TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("white_terracotta_bricks");
@@ -91,6 +92,7 @@ public class ModBlocks {
     public static Block DARK_PRISMARINE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("dark_prismarine_pillar");
     public static Block CHISELED_DARK_PRISMARINE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("chiseled_dark_prismarine");
     public static Block ABYSSAL_LANTERN = new Block(Block.Properties.create(Material.GLASS, MaterialColor.QUARTZ).hardnessAndResistance(0.3F).sound(SoundType.GLASS).lightValue(15)).setRegistryName("abyssal_lantern");
+    public static Block INFERNAL_LANTERN = new Block(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.3F).sound(SoundType.GLASS).lightValue(15)).setRegistryName("infernal_lantern");
     public static Block SMALL_END_STONE_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("small_end_stone_bricks");
     public static Block END_STONE_TILES = new Block(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("end_stone_tiles");
     public static Block END_STONE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("end_stone_pillar");

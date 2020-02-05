@@ -56,7 +56,8 @@ public class BuildBasics {
             event.getRegistry().registerAll(
                     IRON_CHAIN, WALL_LANTERN,
                     POLISHED_STONE, SMALL_STONE_BRICKS, STONE_PILLAR, GRANITE_BRICKS, SMALL_GRANITE_BRICKS, GRANITE_PILLAR, CHISELED_GRANITE,
-                    DIORITE_BRICKS, SMALL_DIORITE_BRICKS, DIORITE_PILLAR, CHISELED_DIORITE, ANDESITE_BRICKS, SMALL_ANDESITE_BRICKS, ANDESITE_PILLAR, CHISELED_ANDESITE, TERRACOTTA_BRICKS,
+                    DIORITE_BRICKS, SMALL_DIORITE_BRICKS, DIORITE_PILLAR, CHISELED_DIORITE, ANDESITE_BRICKS, SMALL_ANDESITE_BRICKS, ANDESITE_PILLAR, CHISELED_ANDESITE,
+                    COBBLESTONE_BRICKS, TERRACOTTA_BRICKS,
                     WHITE_TERRACOTTA_BRICKS, ORANGE_TERRACOTTA_BRICKS, MAGENTA_TERRACOTTA_BRICKS, LIGHT_BLUE_TERRACOTTA_BRICKS, YELLOW_TERRACOTTA_BRICKS, LIME_TERRACOTTA_BRICKS, PINK_TERRACOTTA_BRICKS, GRAY_TERRACOTTA_BRICKS,
                     LIGHT_GRAY_TERRACOTTA_BRICKS, CYAN_TERRACOTTA_BRICKS, PURPLE_TERRACOTTA_BRICKS, BLUE_TERRACOTTA_BRICKS, BROWN_TERRACOTTA_BRICKS, GREEN_TERRACOTTA_BRICKS, RED_TERRACOTTA_BRICKS, BLACK_TERRACOTTA_BRICKS,
                     WHITE_GLAZED_TERRACOTTA_PILLAR, ORANGE_GLAZED_TERRACOTTA_PILLAR, MAGENTA_GLAZED_TERRACOTTA_PILLAR, LIGHT_BLUE_GLAZED_TERRACOTTA_PILLAR, YELLOW_GLAZED_TERRACOTTA_PILLAR, LIME_GLAZED_TERRACOTTA_PILLAR, PINK_GLAZED_TERRACOTTA_PILLAR, GRAY_GLAZED_TERRACOTTA_PILLAR,
@@ -64,7 +65,7 @@ public class BuildBasics {
                     WHITE_PURPUR, ORANGE_PURPUR, MAGENTA_PURPUR, LIGHT_BLUE_PURPUR, YELLOW_PURPUR, LIME_PURPUR, PINK_PURPUR, GRAY_PURPUR,
                     LIGHT_GRAY_PURPUR, CYAN_PURPUR, PURPLE_PURPUR, BLUE_PURPUR, BROWN_PURPUR, GREEN_PURPUR, RED_PURPUR, BLACK_PURPUR,
                     PRISMARINE_TILES, PRISMARINE_PILLAR, CHISELED_PRISMARINE, DARK_PRISMARINE_BRICKS, DARK_PRISMARINE_TILES, DARK_PRISMARINE_PILLAR, CHISELED_DARK_PRISMARINE, ABYSSAL_LANTERN,
-                    SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR,
+                    INFERNAL_LANTERN, SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR,
                     OAK_BOARDS, SPRUCE_BOARDS, BIRCH_BOARDS, JUNGLE_BOARDS, ACACIA_BOARDS, DARK_OAK_BOARDS,
                     GLASS_DOOR, OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, IRON_BAR_DOOR,
                     GLASS_TRAPDOOR, OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, IRON_BAR_TRAPDOOR,
@@ -123,6 +124,7 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_ANDESITE_BRICKS, building).setRegistryName("small_andesite_bricks"));
             event.getRegistry().register(new BlockItem(ANDESITE_PILLAR, building).setRegistryName("andesite_pillar"));
             event.getRegistry().register(new BlockItem(CHISELED_ANDESITE, building).setRegistryName("chiseled_andesite"));
+            event.getRegistry().register(new BlockItem(COBBLESTONE_BRICKS, building).setRegistryName("cobblestone_bricks"));
 
             event.getRegistry().register(new BlockItem(TERRACOTTA_BRICKS, building).setRegistryName("terracotta_bricks"));
             event.getRegistry().register(new BlockItem(WHITE_TERRACOTTA_BRICKS, building).setRegistryName("white_terracotta_bricks"));
@@ -182,6 +184,7 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(DARK_PRISMARINE_PILLAR, building).setRegistryName("dark_prismarine_pillar"));
             event.getRegistry().register(new BlockItem(CHISELED_DARK_PRISMARINE, building).setRegistryName("chiseled_dark_prismarine"));
             event.getRegistry().register(new BlockItem(ABYSSAL_LANTERN, building).setRegistryName("abyssal_lantern"));
+            event.getRegistry().register(new BlockItem(INFERNAL_LANTERN, building).setRegistryName("infernal_lantern"));
             event.getRegistry().register(new BlockItem(SMALL_END_STONE_BRICKS, building).setRegistryName("small_end_stone_bricks"));
             event.getRegistry().register(new BlockItem(END_STONE_TILES, building).setRegistryName("end_stone_tiles"));
             event.getRegistry().register(new BlockItem(END_STONE_PILLAR, building).setRegistryName("end_stone_pillar"));
