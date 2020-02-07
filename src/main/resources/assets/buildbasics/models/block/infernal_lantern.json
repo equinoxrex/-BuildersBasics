@@ -1,7 +1,7 @@
 {
     "parent": "block/cube_column",
     "textures": {
-        "end": "buildbasics:block/infernal_lantern_top",
+        "end": "buildbasics:block/infernal_lantern",
         "side": "buildbasics:block/infernal_lantern"
     }
 }

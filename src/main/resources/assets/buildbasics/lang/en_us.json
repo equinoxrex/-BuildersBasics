@@ -18,6 +18,7 @@
   "block.buildbasics.small_andesite_bricks": "Small Andesite Bricks",
   "block.buildbasics.andesite_pillar": "Andesite Pillar",
   "block.buildbasics.chiseled_andesite": "Chiseled Andesite Bricks",
+  "block.buildbasics.cobblestone_bricks": "Cobblestone Bricks",
 
   "block.buildbasics.terracotta_bricks": "Terracotta Bricks",
   "block.buildbasics.white_terracotta_bricks": "White Terracotta Bricks",
@@ -78,6 +79,7 @@
   "block.buildbasics.dark_prismarine_pillar": "Dark Prismarine Pillar",
   "block.buildbasics.chiseled_dark_prismarine": "Chiseled Dark Prismarine Bricks",
   "block.buildbasics.abyssal_lantern": "Abyssal Lantern",
+  "block.buildbasics.infernal_lantern": "Infernal Lantern",
   "block.buildbasics.small_end_stone_bricks": "Small End Stone Bricks",
   "block.buildbasics.end_stone_tiles": "End Stone Tiles",
   "block.buildbasics.end_stone_pillar": "End Stone Pillar",
