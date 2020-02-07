@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "buildbasics:block/driftwood_board_slab" },
+        "type=top": { "model": "buildbasics:block/driftwood_board_slab_top" },
+        "type=double": { "model": "buildbasics:block/driftwood_boards" }
+    }
+}
