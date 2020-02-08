@@ -10,6 +10,7 @@
     "buildbasics:glass_door"
   ],
   "optional": [
-    "buildbasics:wisteria_glass_door"
+    "buildbasics:wisteria_glass_door",
+    "buildbasics:driftwood_glass_door"
   ]
 }

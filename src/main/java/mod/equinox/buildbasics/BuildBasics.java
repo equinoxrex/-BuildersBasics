@@ -71,14 +71,16 @@ public class BuildBasics {
                     GLASS_TRAPDOOR, OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, IRON_BAR_TRAPDOOR,
                     WHITE_CANDLE, ORANGE_CANDLE, MAGENTA_CANDLE, LIGHT_BLUE_CANDLE, YELLOW_CANDLE, LIME_CANDLE, PINK_CANDLE, GRAY_CANDLE,
                     LIGHT_GRAY_CANDLE, CYAN_CANDLE, PURPLE_CANDLE, BLUE_CANDLE, BROWN_CANDLE, GREEN_CANDLE, RED_CANDLE, BLACK_CANDLE,
-                    SMOOTH_STONE_STAIRS, CRACKED_STONE_BRICK_STAIRS, POLISHED_STONE_STAIRS, SMALL_STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, SMALL_GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, SMALL_DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS, SMALL_ANDESITE_BRICK_STAIRS, TERRACOTTA_BRICK_STAIRS,
+                    SMOOTH_STONE_STAIRS, CRACKED_STONE_BRICK_STAIRS, POLISHED_STONE_STAIRS, SMALL_STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, SMALL_GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, SMALL_DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS, SMALL_ANDESITE_BRICK_STAIRS,
+                    COBBLESTONE_BRICK_STAIRS, MOSSY_COBBLESTONE_BRICK_STAIRS, TERRACOTTA_BRICK_STAIRS,
                     WHITE_TERRACOTTA_BRICK_STAIRS, ORANGE_TERRACOTTA_BRICK_STAIRS, MAGENTA_TERRACOTTA_BRICK_STAIRS, LIGHT_BLUE_TERRACOTTA_BRICK_STAIRS, YELLOW_TERRACOTTA_BRICK_STAIRS, LIME_TERRACOTTA_BRICK_STAIRS, PINK_TERRACOTTA_BRICK_STAIRS, GRAY_TERRACOTTA_BRICK_STAIRS,
                     LIGHT_GRAY_TERRACOTTA_BRICK_STAIRS, CYAN_TERRACOTTA_BRICK_STAIRS, PURPLE_TERRACOTTA_BRICK_STAIRS, BLUE_TERRACOTTA_BRICK_STAIRS, BROWN_TERRACOTTA_BRICK_STAIRS, GREEN_TERRACOTTA_BRICK_STAIRS, RED_TERRACOTTA_BRICK_STAIRS, BLACK_TERRACOTTA_BRICK_STAIRS,
                     WHITE_PURPUR_BLOCK_STAIRS, ORANGE_PURPUR_BLOCK_STAIRS, MAGENTA_PURPUR_BLOCK_STAIRS, LIGHT_BLUE_PURPUR_BLOCK_STAIRS, YELLOW_PURPUR_BLOCK_STAIRS, LIME_PURPUR_BLOCK_STAIRS, PINK_PURPUR_BLOCK_STAIRS, GRAY_PURPUR_BLOCK_STAIRS,
                     LIGHT_GRAY_PURPUR_BLOCK_STAIRS, CYAN_PURPUR_BLOCK_STAIRS, PURPLE_PURPUR_BLOCK_STAIRS, BLUE_PURPUR_BLOCK_STAIRS, BROWN_PURPUR_BLOCK_STAIRS, GREEN_PURPUR_BLOCK_STAIRS, RED_PURPUR_BLOCK_STAIRS, BLACK_PURPUR_BLOCK_STAIRS,
                     DARK_PRISMARINE_BRICK_STAIRS, SMALL_END_STONE_BRICK_STAIRS, END_STONE_STAIRS,
                     OAK_BOARD_STAIRS, SPRUCE_BOARD_STAIRS, BIRCH_BOARD_STAIRS, JUNGLE_BOARD_STAIRS, ACACIA_BOARD_STAIRS, DARK_OAK_BOARD_STAIRS,
-                    CRACKED_STONE_BRICK_SLAB, POLISHED_STONE_SLAB, SMALL_STONE_BRICK_SLAB, GRANITE_BRICK_SLAB, SMALL_GRANITE_BRICK_SLAB, DIORITE_BRICK_SLAB, SMALL_DIORITE_BRICK_SLAB, ANDESITE_BRICK_SLAB, SMALL_ANDESITE_BRICK_SLAB, TERRACOTTA_BRICK_SLAB,
+                    CRACKED_STONE_BRICK_SLAB, POLISHED_STONE_SLAB, SMALL_STONE_BRICK_SLAB, GRANITE_BRICK_SLAB, SMALL_GRANITE_BRICK_SLAB, DIORITE_BRICK_SLAB, SMALL_DIORITE_BRICK_SLAB, ANDESITE_BRICK_SLAB, SMALL_ANDESITE_BRICK_SLAB,
+                    COBBLESTONE_BRICK_SLAB, MOSSY_COBBLESTONE_BRICK_SLAB, TERRACOTTA_BRICK_SLAB,
                     WHITE_TERRACOTTA_BRICK_SLAB, ORANGE_TERRACOTTA_BRICK_SLAB, MAGENTA_TERRACOTTA_BRICK_SLAB, LIGHT_BLUE_TERRACOTTA_BRICK_SLAB, YELLOW_TERRACOTTA_BRICK_SLAB, LIME_TERRACOTTA_BRICK_SLAB, PINK_TERRACOTTA_BRICK_SLAB, GRAY_TERRACOTTA_BRICK_SLAB,
                     LIGHT_GRAY_TERRACOTTA_BRICK_SLAB, CYAN_TERRACOTTA_BRICK_SLAB, PURPLE_TERRACOTTA_BRICK_SLAB, BLUE_TERRACOTTA_BRICK_SLAB, BROWN_TERRACOTTA_BRICK_SLAB, GREEN_TERRACOTTA_BRICK_SLAB, RED_TERRACOTTA_BRICK_SLAB, BLACK_TERRACOTTA_BRICK_SLAB,
                     WHITE_PURPUR_SLAB, ORANGE_PURPUR_SLAB, MAGENTA_PURPUR_SLAB, LIGHT_BLUE_PURPUR_SLAB, YELLOW_PURPUR_SLAB, LIME_PURPUR_SLAB, PINK_PURPUR_SLAB, GRAY_PURPUR_SLAB,
@@ -86,7 +88,7 @@ public class BuildBasics {
                     DARK_PRISMARINE_BRICK_SLAB, SMALL_END_STONE_BRICK_SLAB, END_STONE_SLAB,
                     OAK_BOARD_SLAB, SPRUCE_BOARD_SLAB, BIRCH_BOARD_SLAB, JUNGLE_BOARD_SLAB, ACACIA_BOARD_SLAB, DARK_OAK_BOARD_SLAB,
                     SMALL_STONE_BRICK_WALL, GRANITE_BRICK_WALL, SMALL_GRANITE_BRICK_WALL, DIORITE_BRICK_WALL, SMALL_DIORITE_BRICK_WALL, ANDESITE_BRICK_WALL, SMALL_ANDESITE_BRICK_WALL,
-                    PRISMARINE_BRICK_WALL, DARK_PRISMARINE_WALL, DARK_PRISMARINE_BRICK_WALL, SMALL_END_STONE_BRICK_WALL,
+                    COBBLESTONE_BRICK_WALL, MOSSY_COBBLESTONE_BRICK_WALL, PRISMARINE_BRICK_WALL, DARK_PRISMARINE_WALL, DARK_PRISMARINE_BRICK_WALL, SMALL_END_STONE_BRICK_WALL,
                     //OAK_BOARD_WALL, SPRUCE_BOARD_WALL, BIRCH_BOARD_WALL, JUNGLE_BOARD_WALL, ACACIA_BOARD_WALL, DARK_OAK_BOARD_WALL,
                     RED_NETHER_BRICK_FENCE
             );
@@ -247,6 +249,8 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_DIORITE_BRICK_STAIRS, building).setRegistryName("small_diorite_brick_stairs"));
             event.getRegistry().register(new BlockItem(ANDESITE_BRICK_STAIRS, building).setRegistryName("andesite_brick_stairs"));
             event.getRegistry().register(new BlockItem(SMALL_ANDESITE_BRICK_STAIRS, building).setRegistryName("small_andesite_brick_stairs"));
+            event.getRegistry().register(new BlockItem(COBBLESTONE_BRICK_STAIRS, building).setRegistryName("cobblestone_brick_stairs"));
+            event.getRegistry().register(new BlockItem(MOSSY_COBBLESTONE_BRICK_STAIRS, building).setRegistryName("mossy_cobblestone_brick_stairs"));
             event.getRegistry().register(new BlockItem(TERRACOTTA_BRICK_STAIRS, building).setRegistryName("terracotta_brick_stairs"));
             event.getRegistry().register(new BlockItem(WHITE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("white_terracotta_brick_stairs"));
             event.getRegistry().register(new BlockItem(ORANGE_TERRACOTTA_BRICK_STAIRS, building).setRegistryName("orange_terracotta_brick_stairs"));
@@ -299,6 +303,8 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_DIORITE_BRICK_SLAB, building).setRegistryName("small_diorite_brick_slab"));
             event.getRegistry().register(new BlockItem(ANDESITE_BRICK_SLAB, building).setRegistryName("andesite_brick_slab"));
             event.getRegistry().register(new BlockItem(SMALL_ANDESITE_BRICK_SLAB, building).setRegistryName("small_andesite_brick_slab"));
+            event.getRegistry().register(new BlockItem(COBBLESTONE_BRICK_SLAB, building).setRegistryName("cobblestone_brick_slab"));
+            event.getRegistry().register(new BlockItem(MOSSY_COBBLESTONE_BRICK_SLAB, building).setRegistryName("mossy_cobblestone_brick_slab"));
             event.getRegistry().register(new BlockItem(TERRACOTTA_BRICK_SLAB, building).setRegistryName("terracotta_brick_slab"));
             event.getRegistry().register(new BlockItem(WHITE_TERRACOTTA_BRICK_SLAB, building).setRegistryName("white_terracotta_brick_slab"));
             event.getRegistry().register(new BlockItem(ORANGE_TERRACOTTA_BRICK_SLAB, building).setRegistryName("orange_terracotta_brick_slab"));
@@ -349,6 +355,8 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_DIORITE_BRICK_WALL, decoration).setRegistryName("small_diorite_brick_wall"));
             event.getRegistry().register(new BlockItem(ANDESITE_BRICK_WALL, decoration).setRegistryName("andesite_brick_wall"));
             event.getRegistry().register(new BlockItem(SMALL_ANDESITE_BRICK_WALL, decoration).setRegistryName("small_andesite_brick_wall"));
+            event.getRegistry().register(new BlockItem(COBBLESTONE_BRICK_WALL, decoration).setRegistryName("cobblestone_brick_wall"));
+            event.getRegistry().register(new BlockItem(MOSSY_COBBLESTONE_BRICK_WALL, decoration).setRegistryName("mossy_cobblestone_brick_wall"));
             event.getRegistry().register(new BlockItem(PRISMARINE_BRICK_WALL, decoration).setRegistryName("prismarine_brick_wall"));
             event.getRegistry().register(new BlockItem(DARK_PRISMARINE_WALL, decoration).setRegistryName("dark_prismarine_wall"));
             event.getRegistry().register(new BlockItem(DARK_PRISMARINE_BRICK_WALL, decoration).setRegistryName("dark_prismarine_brick_wall"));

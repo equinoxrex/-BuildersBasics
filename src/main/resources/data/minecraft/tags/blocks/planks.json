@@ -15,6 +15,7 @@
     "buildbasics:dark_oak_boards"
   ],
   "optional": [
-    "buildbasics:wisteria_boards"
+    "buildbasics:wisteria_boards",
+    "buildbasics:driftwood_boards"
   ]
 }

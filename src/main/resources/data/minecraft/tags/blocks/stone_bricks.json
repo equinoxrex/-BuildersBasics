@@ -14,6 +14,8 @@
     "buildbasics:small_granite_bricks",
     "buildbasics:chiseled_andesite",
     "buildbasics:chiseled_diorite",
-    "buildbasics:chiseled_granite"
+    "buildbasics:chiseled_granite",
+    "buildbasics:cobblestone_bricks",
+    "buildbasics:mossy_cobblestone_bricks"
   ]
 }

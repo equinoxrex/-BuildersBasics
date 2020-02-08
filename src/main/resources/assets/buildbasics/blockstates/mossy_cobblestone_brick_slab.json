@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "buildbasics:block/mossy_cobblestone_brick_slab" },
+        "type=top": { "model": "buildbasics:block/mossy_cobblestone_brick_slab_top" },
+        "type=double": { "model": "buildbasics:block/mossy_cobblestone_bricks" }
+    }
+}
