@@ -33,6 +33,7 @@ public class ModBlocks {
     public static Block ANDESITE_PILLAR = new RotatedPillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("andesite_pillar");
     public static Block CHISELED_ANDESITE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("chiseled_andesite");
     public static Block COBBLESTONE_BRICKS = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2F, 6.0F)).setRegistryName("cobblestone_bricks");
+    public static Block MOSSY_COBBLESTONE_BRICKS = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2F, 6.0F)).setRegistryName("mossy_cobblestone_bricks");
 
     public static Block TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("terracotta_bricks");
     public static Block WHITE_TERRACOTTA_BRICKS = new Block(Block.Properties.create(Material.ROCK, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(1.25F, 4.2F)).setRegistryName("white_terracotta_bricks");

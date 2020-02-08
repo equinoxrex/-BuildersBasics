@@ -57,7 +57,7 @@ public class BuildBasics {
                     IRON_CHAIN, WALL_LANTERN,
                     POLISHED_STONE, SMALL_STONE_BRICKS, STONE_PILLAR, GRANITE_BRICKS, SMALL_GRANITE_BRICKS, GRANITE_PILLAR, CHISELED_GRANITE,
                     DIORITE_BRICKS, SMALL_DIORITE_BRICKS, DIORITE_PILLAR, CHISELED_DIORITE, ANDESITE_BRICKS, SMALL_ANDESITE_BRICKS, ANDESITE_PILLAR, CHISELED_ANDESITE,
-                    COBBLESTONE_BRICKS, TERRACOTTA_BRICKS,
+                    COBBLESTONE_BRICKS, MOSSY_COBBLESTONE_BRICKS, TERRACOTTA_BRICKS,
                     WHITE_TERRACOTTA_BRICKS, ORANGE_TERRACOTTA_BRICKS, MAGENTA_TERRACOTTA_BRICKS, LIGHT_BLUE_TERRACOTTA_BRICKS, YELLOW_TERRACOTTA_BRICKS, LIME_TERRACOTTA_BRICKS, PINK_TERRACOTTA_BRICKS, GRAY_TERRACOTTA_BRICKS,
                     LIGHT_GRAY_TERRACOTTA_BRICKS, CYAN_TERRACOTTA_BRICKS, PURPLE_TERRACOTTA_BRICKS, BLUE_TERRACOTTA_BRICKS, BROWN_TERRACOTTA_BRICKS, GREEN_TERRACOTTA_BRICKS, RED_TERRACOTTA_BRICKS, BLACK_TERRACOTTA_BRICKS,
                     WHITE_GLAZED_TERRACOTTA_PILLAR, ORANGE_GLAZED_TERRACOTTA_PILLAR, MAGENTA_GLAZED_TERRACOTTA_PILLAR, LIGHT_BLUE_GLAZED_TERRACOTTA_PILLAR, YELLOW_GLAZED_TERRACOTTA_PILLAR, LIME_GLAZED_TERRACOTTA_PILLAR, PINK_GLAZED_TERRACOTTA_PILLAR, GRAY_GLAZED_TERRACOTTA_PILLAR,
@@ -130,6 +130,7 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(ANDESITE_PILLAR, building).setRegistryName("andesite_pillar"));
             event.getRegistry().register(new BlockItem(CHISELED_ANDESITE, building).setRegistryName("chiseled_andesite"));
             event.getRegistry().register(new BlockItem(COBBLESTONE_BRICKS, building).setRegistryName("cobblestone_bricks"));
+            event.getRegistry().register(new BlockItem(MOSSY_COBBLESTONE_BRICKS, building).setRegistryName("mossy_cobblestone_bricks"));
 
             event.getRegistry().register(new BlockItem(TERRACOTTA_BRICKS, building).setRegistryName("terracotta_bricks"));
             event.getRegistry().register(new BlockItem(WHITE_TERRACOTTA_BRICKS, building).setRegistryName("white_terracotta_bricks"));
