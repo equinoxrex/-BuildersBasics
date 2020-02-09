@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "buildbasics:mossy_cobblestone_bricks"
+    }
+  },
+  "result": {
+    "item": "buildbasics:mossy_cobblestone_brick_stairs",
+    "count": 4
+  }
+}

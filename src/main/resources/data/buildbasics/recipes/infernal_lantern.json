@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NGN",
+    "GGG",
+    "NGN"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:nether_brick"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "buildbasics:infernal_lantern"
+  }
+}
