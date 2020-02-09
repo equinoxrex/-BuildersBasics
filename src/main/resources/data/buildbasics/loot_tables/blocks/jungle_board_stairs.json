@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:small_stone_brick_stairs"
+          "name": "buildbasics:jungle_board_stairs"
         }
       ],
       "conditions": [
