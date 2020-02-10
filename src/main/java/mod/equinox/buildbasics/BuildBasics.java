@@ -65,7 +65,7 @@ public class BuildBasics {
                     WHITE_PURPUR, ORANGE_PURPUR, MAGENTA_PURPUR, LIGHT_BLUE_PURPUR, YELLOW_PURPUR, LIME_PURPUR, PINK_PURPUR, GRAY_PURPUR,
                     LIGHT_GRAY_PURPUR, CYAN_PURPUR, PURPLE_PURPUR, BLUE_PURPUR, BROWN_PURPUR, GREEN_PURPUR, RED_PURPUR, BLACK_PURPUR,
                     PRISMARINE_TILES, PRISMARINE_PILLAR, CHISELED_PRISMARINE, DARK_PRISMARINE_BRICKS, DARK_PRISMARINE_TILES, DARK_PRISMARINE_PILLAR, CHISELED_DARK_PRISMARINE, ABYSSAL_LANTERN,
-                    INFERNAL_LANTERN, SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR,
+                    INFERNAL_LANTERN, SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR, FIREBRAND,
                     OAK_BOARDS, SPRUCE_BOARDS, BIRCH_BOARDS, JUNGLE_BOARDS, ACACIA_BOARDS, DARK_OAK_BOARDS,
                     GLASS_DOOR, OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, IRON_BAR_DOOR,
                     GLASS_TRAPDOOR, OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, IRON_BAR_TRAPDOOR,
@@ -196,6 +196,8 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(SMALL_END_STONE_BRICKS, building).setRegistryName("small_end_stone_bricks"));
             event.getRegistry().register(new BlockItem(END_STONE_TILES, building).setRegistryName("end_stone_tiles"));
             event.getRegistry().register(new BlockItem(END_STONE_PILLAR, building).setRegistryName("end_stone_pillar"));
+
+            event.getRegistry().register(new BlockItem(FIREBRAND, decoration).setRegistryName("firebrand"));
 
             event.getRegistry().register(new BlockItem(OAK_BOARDS, building).setRegistryName("oak_boards"));
             event.getRegistry().register(new BlockItem(SPRUCE_BOARDS, building).setRegistryName("spruce_boards"));
