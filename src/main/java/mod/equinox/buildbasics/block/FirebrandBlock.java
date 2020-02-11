@@ -40,10 +40,16 @@ import java.util.stream.IntStream;
 
 }*/
 
-public class FirebrandBlock extends DirectionalBlock {
-    protected static final VoxelShape END_ROD_VERTICAL_AABB = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 16.0D, 10.0D);
-    protected static final VoxelShape END_ROD_NS_AABB = Block.makeCuboidShape(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 16.0D);
-    protected static final VoxelShape END_ROD_EW_AABB = Block.makeCuboidShape(0.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D);
+public class FirebrandBlock extends Block {
+    public static final DirectionProperty FACING = BlockStateProperties.FACING;
+    //public static final IntegerProperty ROTATION = IntegerProperty.create("rotation", 1, 2);
+
+    protected static final VoxelShape BRAND_D = Block.makeCuboidShape(6.0D, 12.0D, 6.0D, 10.0D, 16.0D, 10.0D);
+    protected static final VoxelShape BRAND_U = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 4.0D, 10.0D);
+    protected static final VoxelShape BRAND_N = Block.makeCuboidShape(6.0D, 6.0D, 12.0D, 10.0D, 10.0D, 16.0D);
+    protected static final VoxelShape BRAND_S = Block.makeCuboidShape(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 4.0D);
+    protected static final VoxelShape BRAND_W = Block.makeCuboidShape(12.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D);
+    protected static final VoxelShape BRAND_E = Block.makeCuboidShape(0.0D, 6.0D, 6.0D, 4.0D, 10.0D, 10.0D);
 
     protected FirebrandBlock(Block.Properties builder) {
         super(builder);
@@ -70,14 +76,20 @@ public class FirebrandBlock extends DirectionalBlock {
     }
 
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        switch(state.get(FACING).getAxis()) {
-            case X:
+        switch(state.get(FACING).getIndex()) {
+            case 0:
             default:
-                return END_ROD_EW_AABB;
-            case Z:
-                return END_ROD_NS_AABB;
-            case Y:
-                return END_ROD_VERTICAL_AABB;
+                return BRAND_D;
+            case 1:
+                return BRAND_U;
+            case 2:
+                return BRAND_N;
+            case 3:
+                return BRAND_S;
+            case 4:
+                return BRAND_W;
+            case 5:
+                return BRAND_E;
         }
     }
 
@@ -92,7 +104,7 @@ public class FirebrandBlock extends DirectionalBlock {
      * this method is unrelated to {@link randomTick} and {@link #needsRandomTick}, and will always be called regardless
      * of whether the block can receive random update ticks
      */
-    @OnlyIn(Dist.CLIENT)
+    /*@OnlyIn(Dist.CLIENT)
     public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         Direction direction = stateIn.get(FACING);
         double d0 = (double)pos.getX() + 0.55D - (double)(rand.nextFloat() * 0.1F);
@@ -103,7 +115,7 @@ public class FirebrandBlock extends DirectionalBlock {
             worldIn.addParticle(ParticleTypes.END_ROD, d0 + (double)direction.getXOffset() * d3, d1 + (double)direction.getYOffset() * d3, d2 + (double)direction.getZOffset() * d3, rand.nextGaussian() * 0.005D, rand.nextGaussian() * 0.005D, rand.nextGaussian() * 0.005D);
         }
 
-    }
+    }*/
 
     /**
      * Gets the render layer this block will render on. SOLID for solid blocks, CUTOUT or CUTOUT_MIPPED for on-off
