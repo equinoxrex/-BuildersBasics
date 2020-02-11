@@ -42,7 +42,7 @@ import java.util.stream.IntStream;
 
 public class FirebrandBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
-    //public static final IntegerProperty ROTATION = IntegerProperty.create("rotation", 1, 2);
+    public static final IntegerProperty ROTATION = IntegerProperty.create("rotation", 1, 2);
 
     protected static final VoxelShape BRAND_D = Block.makeCuboidShape(6.0D, 12.0D, 6.0D, 10.0D, 16.0D, 10.0D);
     protected static final VoxelShape BRAND_U = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 4.0D, 10.0D);
@@ -62,8 +62,8 @@ public class FirebrandBlock extends Block {
      * @deprecated call via {@link IBlockState#withRotation(Rotation)} whenever possible. Implementing/overriding is
      * fine.
      */
-    public BlockState rotate(BlockState state, Rotation rot) {
-        return state.with(FACING, rot.rotate(state.get(FACING)));
+    public BlockState rotate(BlockState state, Rotation facing) {
+        return state.with(FACING, facing.rotate(state.get(FACING)));
     }
 
     /**
@@ -95,7 +95,8 @@ public class FirebrandBlock extends Block {
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         Direction direction = context.getFace();
-        BlockState blockstate = context.getWorld().getBlockState(context.getPos().offset(direction.getOpposite()));
+        BlockPos blockpos = context.getPos();
+        BlockState blockstate = context.getWorld().getBlockState(context.getPos().offset(direction.getOpposite())).with(ROTATION, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? 1 : 2);
         return blockstate.getBlock() == this && blockstate.get(FACING) == direction ? this.getDefaultState().with(FACING, direction.getOpposite()) : this.getDefaultState().with(FACING, direction);
     }
 
