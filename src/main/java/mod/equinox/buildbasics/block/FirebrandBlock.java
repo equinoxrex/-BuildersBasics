@@ -42,7 +42,7 @@ import java.util.stream.IntStream;
 
 public class FirebrandBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
-    public static final IntegerProperty ROTATION = IntegerProperty.create("rotation", 1, 2);
+    public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
 
     protected static final VoxelShape BRAND_D = Block.makeCuboidShape(6.0D, 12.0D, 6.0D, 10.0D, 16.0D, 10.0D);
     protected static final VoxelShape BRAND_U = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 4.0D, 10.0D);
@@ -53,7 +53,7 @@ public class FirebrandBlock extends Block {
 
     protected FirebrandBlock(Block.Properties builder) {
         super(builder);
-        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.UP));
+        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.UP).with(HALF, Half.BOTTOM));
     }
 
     /**
@@ -96,8 +96,8 @@ public class FirebrandBlock extends Block {
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         Direction direction = context.getFace();
         BlockPos blockpos = context.getPos();
-        BlockState blockstate = context.getWorld().getBlockState(context.getPos().offset(direction.getOpposite())).with(ROTATION, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? 1 : 2);
-        return blockstate.getBlock() == this && blockstate.get(FACING) == direction ? this.getDefaultState().with(FACING, direction.getOpposite()) : this.getDefaultState().with(FACING, direction);
+        BlockState blockstate = context.getWorld().getBlockState(context.getPos().offset(direction.getOpposite()));
+        return blockstate.getBlock() == this && blockstate.get(FACING) == direction ? this.getDefaultState().with(FACING, direction.getOpposite()).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP) : this.getDefaultState().with(FACING, direction).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP);
     }
 
     /**
@@ -127,7 +127,7 @@ public class FirebrandBlock extends Block {
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, HALF);
     }
 
     /**
