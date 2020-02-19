@@ -1,10 +1,20 @@
 {
     "variants": {
-        "facing=up": { "model": "buildbasics:block/firebrand" },
-        "facing=down": { "model": "buildbasics:block/firebrand", "x": 180 },
-        "facing=east": { "model": "buildbasics:block/firebrand", "y": 90, "x": 90 },
-        "facing=south": { "model": "buildbasics:block/firebrand", "y": 180, "x": 90 },
-        "facing=west": { "model": "buildbasics:block/firebrand", "y": 270, "x": 90 },
-        "facing=north": { "model": "buildbasics:block/firebrand", "y": 0, "x": 90 }
+        "facing=east,position=bottom": { "model": "buildbasics:block/firebrand", "y": 90 },
+        "facing=south,position=bottom": { "model": "buildbasics:block/firebrand", "y": 180 },
+        "facing=west,position=bottom": { "model": "buildbasics:block/firebrand", "y": 270 },
+        "facing=north,position=bottom": { "model": "buildbasics:block/firebrand", "y": 0 },
+        "facing=east,position=lower": { "model": "buildbasics:block/firebrand", "y": 90, "x": 90 },
+        "facing=south,position=lower": { "model": "buildbasics:block/firebrand", "y": 180, "x": 90 },
+        "facing=west,position=lower": { "model": "buildbasics:block/firebrand", "y": 270, "x": 90 },
+        "facing=north,position=lower": { "model": "buildbasics:block/firebrand", "y": 0, "x": 90 },
+        "facing=east,position=upper": { "model": "buildbasics:block/firebrand", "y": 90, "x": 90, "z": 90 },
+        "facing=south,position=upper": { "model": "buildbasics:block/firebrand", "y": 180, "x": 90, "z": 90 },
+        "facing=west,position=upper": { "model": "buildbasics:block/firebrand", "y": 180, "x": 90},
+        "facing=north,position=upper": { "model": "buildbasics:block/firebrand", "y": 0, "x": 90, "z": 90 },
+        "facing=east,position=top": { "model": "buildbasics:block/firebrand", "y": 90, "x": 180 },
+        "facing=south,position=top": { "model": "buildbasics:block/firebrand", "y": 180, "x": 180 },
+        "facing=west,position=top": { "model": "buildbasics:block/firebrand", "y": 270, "x": 180 },
+        "facing=north,position=top": { "model": "buildbasics:block/firebrand", "y": 0, "x": 180 }
     }
 }

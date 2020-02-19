@@ -27,25 +27,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.Random;
 import java.util.stream.IntStream;
 
-/*public class FirebrandBlock extends Block {
-    public static final DirectionProperty SIDE = BlockStateProperties.FACING;
-    public static final IntegerProperty ROTATION = IntegerProperty.create("side", 1, 2);
-    protected static final VoxelShape BOTTOM = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D);
-    protected static final VoxelShape TOP = Block.makeCuboidShape(0.0D, 12.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape NORTH = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 4.0D, 16.0D, 16.0D);
-    protected static final VoxelShape WEST = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 4.0D);
-    protected static final VoxelShape SOUTH = Block.makeCuboidShape(12.0D, 16.0D, 16.0D, 16.0D, 16.0D, 16.0D);
-    protected static final VoxelShape EAST = Block.makeCuboidShape(16.0D, 16.0D, 12.0D, 16.0D, 16.0D, 16.0D);
-
-
-}*/
-
 public class FirebrandBlock extends Block {
-    public static final DirectionProperty FACING = BlockStateProperties.FACING;
-    public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final EnumProperty<EnumPosition> POS = EnumProperty.create("position", EnumPosition.class);
 
-    protected static final VoxelShape BRAND_D = Block.makeCuboidShape(6.0D, 12.0D, 6.0D, 10.0D, 16.0D, 10.0D);
-    protected static final VoxelShape BRAND_U = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 4.0D, 10.0D);
+    protected static final VoxelShape BRAND_TOP = Block.makeCuboidShape(6.0D, 12.0D, 6.0D, 10.0D, 16.0D, 10.0D);
+    protected static final VoxelShape BRAND_BOTTOM = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 4.0D, 10.0D);
     protected static final VoxelShape BRAND_N = Block.makeCuboidShape(6.0D, 6.0D, 12.0D, 10.0D, 10.0D, 16.0D);
     protected static final VoxelShape BRAND_S = Block.makeCuboidShape(6.0D, 6.0D, 0.0D, 10.0D, 10.0D, 4.0D);
     protected static final VoxelShape BRAND_W = Block.makeCuboidShape(12.0D, 6.0D, 6.0D, 16.0D, 10.0D, 10.0D);
@@ -53,7 +40,7 @@ public class FirebrandBlock extends Block {
 
     protected FirebrandBlock(Block.Properties builder) {
         super(builder);
-        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.UP).with(HALF, Half.BOTTOM));
+        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(POS, EnumPosition.BOTTOM));
     }
 
     /**
@@ -76,28 +63,49 @@ public class FirebrandBlock extends Block {
     }
 
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        switch(state.get(FACING).getIndex()) {
-            case 0:
-            default:
-                return BRAND_D;
-            case 1:
-                return BRAND_U;
-            case 2:
-                return BRAND_N;
-            case 3:
-                return BRAND_S;
-            case 4:
-                return BRAND_W;
-            case 5:
-                return BRAND_E;
+        VoxelShape shape = BRAND_TOP;
+        if (state.get(POS) == EnumPosition.LOWER || state.get(POS) == EnumPosition.UPPER) {
+            if (state.get(FACING).getHorizontalIndex() == 0) {
+                shape = BRAND_S;
+            }
+            else if (state.get(FACING).getHorizontalIndex() == 1) {
+                shape = BRAND_W;
+            }
+            else if (state.get(FACING).getHorizontalIndex() == 2) {
+                shape = BRAND_N;
+            }
+            else if (state.get(FACING).getHorizontalIndex() == 3) {
+                shape = BRAND_E;
+            }
         }
+        else {
+            if(state.get(POS) == EnumPosition.BOTTOM) {
+                shape = BRAND_BOTTOM;
+            }
+            else if(state.get(POS) == EnumPosition.TOP) {
+                shape = BRAND_TOP;
+            }
+        }
+        return shape;
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         Direction direction = context.getFace();
         BlockPos blockpos = context.getPos();
-        BlockState blockstate = context.getWorld().getBlockState(context.getPos().offset(direction.getOpposite()));
-        return blockstate.getBlock() == this && blockstate.get(FACING) == direction ? this.getDefaultState().with(FACING, direction.getOpposite()).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP) : this.getDefaultState().with(FACING, direction).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP);
+        BlockState blockstate = this.getDefaultState();
+        if (direction == Direction.DOWN) {
+                blockstate = blockstate.with(POS, EnumPosition.TOP).with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        }
+        else if ((context.getHitVec().y - (double)blockpos.getY() < 0.5D) && (context.getHitVec().y - (double)blockpos.getY() > 0.0D) && (direction == Direction.NORTH || direction == Direction.EAST || direction == Direction.SOUTH || direction == Direction.WEST)) {
+            blockstate = blockstate.with(POS, EnumPosition.LOWER).with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        }
+        else if ((context.getHitVec().y - (double)blockpos.getY() > 0.5D) && (context.getHitVec().y - (double)blockpos.getY() < 1.0D) && (direction == Direction.NORTH || direction == Direction.EAST || direction == Direction.SOUTH || direction == Direction.WEST)) {
+            blockstate = blockstate.with(POS, EnumPosition.UPPER).with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        }
+        else {
+            blockstate = blockstate.with(POS, EnumPosition.BOTTOM).with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+        }
+        return blockstate;
     }
 
     /**
@@ -127,7 +135,7 @@ public class FirebrandBlock extends Block {
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(FACING, HALF);
+        builder.add(FACING, POS);
     }
 
     /**
