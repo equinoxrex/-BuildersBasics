@@ -1,0 +1,7 @@
+{
+    "parent": "block/template_palisade_inventory",
+    "textures": {
+        "post": "buildbasics:block/oak_palisade_post"
+	"palisade": "buildbasics:block/oak_palisade"
+    }
+}

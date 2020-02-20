@@ -260,7 +260,7 @@ public class ModBlocks {
     public static Block DARK_PRISMARINE_WALL = new WallBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("dark_prismarine_wall");
     public static Block DARK_PRISMARINE_BRICK_WALL = new WallBlock(Block.Properties.create(Material.ROCK, MaterialColor.DIAMOND).hardnessAndResistance(1.5F, 6.0F)).setRegistryName("dark_prismarine_brick_wall");
     public static Block SMALL_END_STONE_BRICK_WALL = new WallBlock(Block.Properties.create(Material.ROCK, MaterialColor.SAND).hardnessAndResistance(0.8F)).setRegistryName("small_end_stone_brick_wall");
-    public static Block OAK_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("oak_board_wall");
+    public static Block OAK_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("oak_board_palisade");
     public static Block SPRUCE_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("spruce_board_wall");
     public static Block BIRCH_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("birch_board_wall");
     public static Block JUNGLE_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("jungle_board_wall");

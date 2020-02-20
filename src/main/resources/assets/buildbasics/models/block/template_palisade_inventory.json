@@ -1,0 +1,74 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": :block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#palisade"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 16], "texture": "#post"},
+				"east": {"uv": [0, 0, 4, 16], "texture": "#post"},
+				"south": {"uv": [0, 0, 4, 16], "texture": "#post"},
+				"west": {"uv": [0, 0, 4, 16], "texture": "#post"},
+				"up": {"uv": [4, 0, 8, 4], "texture": "#post"},
+				"down": {"uv": [4, 4, 8, 8], "texture": "#post"}
+			}
+		},
+		{
+			"from": [7, 0, 0],
+			"to": [9, 14, 8],
+			"faces": {
+				"north": {"uv": [8, 0, 10, 14], "texture": "#palisade", "cullface": "north"},
+				"east": {"uv": [0, 0, 8, 14], "texture": "#palisade"},
+				"south": {"uv": [0, 0, 2, 14], "texture": "#palisade"},
+				"west": {"uv": [8, 0, 16, 14], "texture": "#palisade"},
+				"up": {"uv": [8, 14, 16, 16], "rotation": 90, "texture": "#palisade"},
+				"down": {"uv": [0, 14, 8, 16], "rotation": 90, "texture": "#palisade", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7, 0, 8],
+			"to": [9, 14, 16],
+			"color": 1,
+			"faces": {
+				"north": {"uv": [0, 0, 2, 14], "texture": "#missing"},
+				"east": {"uv": [8, 0, 16, 14], "texture": "#missing"},
+				"south": {"uv": [8, 0, 10, 14], "texture": "#missing", "cullface": "north"},
+				"west": {"uv": [0, 0, 8, 14], "texture": "#missing"},
+				"up": {"uv": [8, 14, 16, 16], "rotation": 270, "texture": "#missing"},
+				"down": {"uv": [0, 14, 8, 16], "rotation": 270, "texture": "#missing", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, 135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	},
+	"groups": [
+		{
+			"name": "template_palisade_post",
+			"origin": [8, 8, 8],
+			"children": [0]
+		},
+		{
+			"name": "template_palisade_side",
+			"origin": [8, 8, 8],
+			"children": [1]
+		},
+		{
+			"name": "template_palisade_side",
+			"origin": [8, 8, 8],
+			"children": [2]
+		}
+	]
+}
