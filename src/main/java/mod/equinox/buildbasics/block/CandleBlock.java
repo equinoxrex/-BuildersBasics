@@ -102,6 +102,11 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
     }
 
     @Override
+    public float getEnchantPowerBonus(BlockState state, IWorldReader world, BlockPos pos) {
+        return (float)(state.get(CANDLES) == 3 ? 1 : 0.5);
+    }
+
+    @Override
     @OnlyIn(Dist.CLIENT)
     public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         double x = pos.getX();
@@ -172,7 +177,7 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
     }
 
     static {
-        CANDLES = BlockStateProperties.PICKLES_1_4;
+        CANDLES = IntegerProperty.create("candles", 0, 3);
         WATERLOGGED = BlockStateProperties.WATERLOGGED;
         ONE_SHAPE = Block.makeCuboidShape(6.0D, 0.0D, 6.0D, 10.0D, 10.0D, 10.0D);
         TWO_SHAPE = Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 10.0D, 13.0D);
