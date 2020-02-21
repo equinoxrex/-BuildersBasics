@@ -36,10 +36,10 @@ public class ChainBlock extends Block {
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
         Direction direction = Direction.UP;
-        return Block.func_220055_a(worldIn, pos.offset(direction), direction.getOpposite());
+        return Block.hasEnoughSolidSide(worldIn, pos.offset(direction), direction.getOpposite());
     }
 
-    /**
+    /*
      * @deprecated call via {@link IBlockState#getMobilityFlag()} whenever possible. Implementing/overriding is fine.
      */
     public PushReaction getPushReaction() {
