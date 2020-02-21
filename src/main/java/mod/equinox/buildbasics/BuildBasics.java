@@ -68,6 +68,7 @@ public class BuildBasics {
                     INFERNAL_LANTERN, SMALL_END_STONE_BRICKS, END_STONE_TILES, END_STONE_PILLAR, FIREBRAND,
                     OAK_BOARDS, SPRUCE_BOARDS, BIRCH_BOARDS, JUNGLE_BOARDS, ACACIA_BOARDS, DARK_OAK_BOARDS,
                     ROTTEN_OAK_PLANKS, ROTTEN_SPRUCE_PLANKS, ROTTEN_BIRCH_PLANKS, ROTTEN_JUNGLE_PLANKS, ROTTEN_ACACIA_PLANKS, ROTTEN_DARK_OAK_PLANKS,
+                    MOSSY_OAK_PLANKS, MOSSY_SPRUCE_PLANKS, MOSSY_BIRCH_PLANKS, MOSSY_JUNGLE_PLANKS, MOSSY_ACACIA_PLANKS, MOSSY_DARK_OAK_PLANKS,
                     GLASS_DOOR, OAK_GLASS_DOOR, SPRUCE_GLASS_DOOR, BIRCH_GLASS_DOOR, JUNGLE_GLASS_DOOR, ACACIA_GLASS_DOOR, DARK_OAK_GLASS_DOOR, IRON_GLASS_DOOR, IRON_BAR_DOOR,
                     GLASS_TRAPDOOR, OAK_GLASS_TRAPDOOR, SPRUCE_GLASS_TRAPDOOR, BIRCH_GLASS_TRAPDOOR, JUNGLE_GLASS_TRAPDOOR, ACACIA_GLASS_TRAPDOOR, DARK_OAK_GLASS_TRAPDOOR, IRON_GLASS_TRAPDOOR, IRON_BAR_TRAPDOOR,
                     WHITE_CANDLE, ORANGE_CANDLE, MAGENTA_CANDLE, LIGHT_BLUE_CANDLE, YELLOW_CANDLE, LIME_CANDLE, PINK_CANDLE, GRAY_CANDLE,
@@ -212,6 +213,12 @@ public class BuildBasics {
             event.getRegistry().register(new BlockItem(ROTTEN_JUNGLE_PLANKS, building).setRegistryName("rotten_jungle_planks"));
             event.getRegistry().register(new BlockItem(ROTTEN_ACACIA_PLANKS, building).setRegistryName("rotten_acacia_planks"));
             event.getRegistry().register(new BlockItem(ROTTEN_DARK_OAK_PLANKS, building).setRegistryName("rotten_dark_oak_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_OAK_PLANKS, building).setRegistryName("mossy_oak_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_SPRUCE_PLANKS, building).setRegistryName("mossy_spruce_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_BIRCH_PLANKS, building).setRegistryName("mossy_birch_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_JUNGLE_PLANKS, building).setRegistryName("mossy_jungle_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_ACACIA_PLANKS, building).setRegistryName("mossy_acacia_planks"));
+            event.getRegistry().register(new BlockItem(MOSSY_DARK_OAK_PLANKS, building).setRegistryName("mossy_dark_oak_planks"));
 
             event.getRegistry().register(new BlockItem(GLASS_DOOR, redstone).setRegistryName("glass_door"));
             event.getRegistry().register(new BlockItem(OAK_GLASS_DOOR, redstone).setRegistryName("oak_glass_door"));

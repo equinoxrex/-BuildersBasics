@@ -16,17 +16,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class RottenBlock extends Block {
-    public static final IntegerProperty STRENGTH = IntegerProperty.create("strength", 0, 2);
+    public static final IntegerProperty STRENGTH = IntegerProperty.create("strength", 0, 1);
     public RottenBlock(Block.Properties properties) {
         super(properties);
-        this.setDefaultState(this.stateContainer.getBaseState().with(STRENGTH, Integer.valueOf(2)));
+        this.setDefaultState(this.stateContainer.getBaseState().with(STRENGTH, Integer.valueOf(1)));
     }
 
     /**
      * Called when the given entity walks on this Block
      */
     public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
-        this.tryTrample(worldIn, pos, entityIn, 100);
+        this.tryTrample(worldIn, pos, entityIn, 80);
         super.onEntityWalk(worldIn, pos, entityIn);
     }
 
