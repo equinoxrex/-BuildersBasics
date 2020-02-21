@@ -1,5 +1,5 @@
 {
-    "parent": "block/template_wall_side",
+    "parent": "buildbasics:block/template_palisade_side",
     "textures": {
         "palisade": "buildbasics:block/oak_palisade"
     }

@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": :block/block",
 	"ambientocclusion": false,
 	"textures": {
 		"particle": "#palisade"
@@ -35,12 +34,12 @@
 			"to": [9, 14, 16],
 			"color": 1,
 			"faces": {
-				"north": {"uv": [0, 0, 2, 14], "texture": "#missing"},
-				"east": {"uv": [8, 0, 16, 14], "texture": "#missing"},
-				"south": {"uv": [8, 0, 10, 14], "texture": "#missing", "cullface": "north"},
-				"west": {"uv": [0, 0, 8, 14], "texture": "#missing"},
-				"up": {"uv": [8, 14, 16, 16], "rotation": 270, "texture": "#missing"},
-				"down": {"uv": [0, 14, 8, 16], "rotation": 270, "texture": "#missing", "cullface": "down"}
+				"north": {"uv": [0, 0, 2, 14], "texture": "#palisade"},
+				"east": {"uv": [8, 0, 16, 14], "texture": "#palisade"},
+				"south": {"uv": [8, 0, 10, 14], "texture": "#palisade", "cullface": "north"},
+				"west": {"uv": [0, 0, 8, 14], "texture": "#palisade"},
+				"up": {"uv": [8, 14, 16, 16], "rotation": 270, "texture": "#palisade"},
+				"down": {"uv": [0, 14, 8, 16], "rotation": 270, "texture": "#palisade", "cullface": "down"}
 			}
 		}
 	],
