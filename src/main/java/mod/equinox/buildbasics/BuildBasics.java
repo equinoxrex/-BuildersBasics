@@ -30,6 +30,8 @@ import static mod.equinox.buildbasics.block.ModBlocks.*;
 @Mod("buildbasics")
 public class BuildBasics {
 
+    public static final String MODID = "buildbasics";
+
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
     public static ModSetup setup = new ModSetup();
