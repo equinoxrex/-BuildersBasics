@@ -1,6 +1,9 @@
 package mod.equinox.buildbasics;
 
 import mod.equinox.buildbasics.block.ModBlocks;
+import mod.equinox.buildbasics.registry.BlockDataRegistry;
+import mod.equinox.buildbasics.registry.BlockRegistry;
+import mod.equinox.buildbasics.registry.ItemRegistry;
 import mod.equinox.buildbasics.setup.ClientProxy;
 import mod.equinox.buildbasics.setup.IProxy;
 import mod.equinox.buildbasics.setup.ModSetup;
@@ -10,11 +13,16 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.world.biome.BirchForestBiome;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -27,7 +35,7 @@ import static mod.equinox.buildbasics.block.ModBlocks.*;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("buildbasics")
+/*@Mod("buildbasics")
 public class BuildBasics {
 
     public static final String MODID = "buildbasics";
@@ -410,4 +418,33 @@ public class BuildBasics {
             }
         }
     }
+}*/
+
+
+// The value here should match an entry in the META-INF/mods.toml file
+@Mod("buildbasics")
+public class BuildBasics {
+
+    public static final String MODID = "buildbasics";
+
+    public BuildBasics() {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BBCommonConfig.spec);
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ItemRegistry.ITEMS.register(modEventBus);
+        BlockRegistry.BLOCKS.register(modEventBus);
+
+        modEventBus.addListener(this::setup);
+        DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> modEventBus.addListener(this::setupClient));
+    }
+
+    public void setupClient(final FMLClientSetupEvent event) {
+        BBCommonConfig.refresh();
+    }
+
+    private void setup(final FMLCommonSetupEvent event)
+    {
+        BlockDataRegistry.registerFlammables();
+    }
+
 }
