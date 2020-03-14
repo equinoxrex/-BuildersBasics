@@ -11,7 +11,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 
-public class RegistryUtilities {
+public class BlockUtilities {
 
     public static <I extends Item> RegistryObject<I> createItem(String name, Supplier<? extends I> supplier) {
         RegistryObject<I> item = ItemRegistry.ITEMS.register(name, supplier);
