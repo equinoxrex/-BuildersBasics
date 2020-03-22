@@ -9,7 +9,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.config.ModConfig;
-
+/**
+ * @credit - bageldotjpg
+ */
 @EventBusSubscriber(bus = Bus.MOD)
 public final class BBCommonConfig {
     public static boolean quarkDuplicates = true;

@@ -6,7 +6,9 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 
 import static net.minecraft.block.Blocks.*;
-
+/**
+ * @credit - bageldotjpg & SmellyModder(Luke Tonon)
+ */
 public class ModBlocks {
     public static Block IRON_CHAIN = new ChainBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(3.5F).sound(SoundType.METAL));//.setRegistryName("iron_chain");
     public static Block WALL_LANTERN = new WallLanternBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(3.5F).sound(SoundType.LANTERN).lightValue(15));//.setRegistryName("wall_lantern");

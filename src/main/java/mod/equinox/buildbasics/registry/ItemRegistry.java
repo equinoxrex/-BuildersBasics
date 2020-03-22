@@ -4,7 +4,9 @@ import mod.equinox.buildbasics.BuildBasics;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
+/**
+ * @credit - bageldotjpg & SmellyModder(Luke Tonon)
+ */
 public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, BuildBasics.MODID);
 }

@@ -10,7 +10,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-
+/**
+ * @credit - bageldotjpg & SmellyModder(Luke Tonon)
+ */
 @Mod.EventBusSubscriber(modid = BuildBasics.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, BuildBasics.MODID);

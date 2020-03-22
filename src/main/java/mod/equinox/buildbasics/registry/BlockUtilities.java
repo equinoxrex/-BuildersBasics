@@ -10,7 +10,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
-
+/**
+ * @credit - SmellyModder(Luke Tonon)
+ */
 public class BlockUtilities {
 
     public static <I extends Item> RegistryObject<I> createItem(String name, Supplier<? extends I> supplier) {

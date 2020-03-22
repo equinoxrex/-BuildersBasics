@@ -23,6 +23,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import javax.annotation.Nullable;
 import java.util.Random;
 
+/**
+ * @credit - bageldotjpg
+ */
 public class CandleBlock extends BushBlock implements IWaterLoggable {
     public static final IntegerProperty CANDLES;
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
