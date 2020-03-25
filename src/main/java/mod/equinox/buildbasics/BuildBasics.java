@@ -428,7 +428,6 @@ public class BuildBasics {
     public static final String MODID = "buildbasics";
 
     public BuildBasics() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BBCommonConfig.spec);
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemRegistry.ITEMS.register(modEventBus);
@@ -438,9 +437,7 @@ public class BuildBasics {
         DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> modEventBus.addListener(this::setupClient));
     }
 
-    public void setupClient(final FMLClientSetupEvent event) {
-        BBCommonConfig.refresh();
-    }
+    public void setupClient(final FMLClientSetupEvent event) { }
 
     private void setup(final FMLCommonSetupEvent event)
     {

@@ -117,32 +117,32 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.8D, z+0.5D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.8D, z+0.5D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.WEST) {
+        else if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.WEST) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.375D, y+0.8D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.375D, y+0.8D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.6875D, y+0.55D, z+0.6875D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.6875D, y+0.55D, z+0.6875D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.NORTH) {
+        else if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.NORTH) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.6875D, y+0.8D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.6875D, y+0.8D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.3125D, y+0.55D, z+0.625D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.31235D, y+0.55D, z+0.625D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.EAST) {
+        else if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.EAST) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.6875D, y+0.8D, z+0.6875D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.6875D, y+0.8D, z+0.6875D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.375D, y+0.55D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.375D, y+0.55D, z+0.3125D, 0.002D, 0.01D, 0.002D);
 
         }
-        if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.SOUTH) {
+        else if((Integer)stateIn.get(CANDLES) == 2 && stateIn.get(FACING) == Direction.SOUTH) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.3125D, y+0.8D, z+0.625D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.3125D, y+0.8D, z+0.625D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.6875D, y+0.55D, z+0.3125D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.6875D, y+0.55D, z+0.3125D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.WEST) {
+        else if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.WEST) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.25D, y+0.8D, z+0.25D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.25D, y+0.8D, z+0.25D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.75D, y+0.55D, z+0.375D, 0.002D, 0.01D, 0.002D);
@@ -150,7 +150,7 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.925D, z+0.75D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.925D, z+0.75D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.NORTH) {
+        else if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.NORTH) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.75D, y+0.8D, z+0.25D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.75D, y+0.8D, z+0.25D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.625D, y+0.55D, z+0.75D, 0.002D, 0.01D, 0.002D);
@@ -158,7 +158,7 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.25D, y+0.925D, z+0.5D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.25D, y+0.925D, z+0.5D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.EAST) {
+        else if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.EAST) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.75D, y+0.8D, z+0.75D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.75D, y+0.8D, z+0.75D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.25D, y+0.55D, z+0.625D, 0.002D, 0.01D, 0.002D);
@@ -166,7 +166,7 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.925D, z+0.25D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.925D, z+0.25D, 0.002D, 0.01D, 0.002D);
         }
-        if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.SOUTH) {
+        else if((Integer)stateIn.get(CANDLES) == 3 && stateIn.get(FACING) == Direction.SOUTH) {
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.25D, y+0.8D, z+0.75D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.FLAME, x+0.25D, y+0.8D, z+0.75D, 0.002D, 0.01D, 0.002D);
             worldIn.addParticle(ParticleTypes.SMOKE, x+0.375D, y+0.55D, z+0.25D, 0.002D, 0.01D, 0.002D);
