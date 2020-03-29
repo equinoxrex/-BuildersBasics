@@ -1,18 +1,9 @@
 package mod.equinox.buildbasics;
 
-import mod.equinox.buildbasics.block.ModBlocks;
+
 import mod.equinox.buildbasics.registry.BlockDataRegistry;
 import mod.equinox.buildbasics.registry.BlockRegistry;
 import mod.equinox.buildbasics.registry.ItemRegistry;
-import mod.equinox.buildbasics.setup.ClientProxy;
-import mod.equinox.buildbasics.setup.IProxy;
-import mod.equinox.buildbasics.setup.ModSetup;
-import mod.equinox.buildbasics.setup.ServerProxy;
-import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.world.biome.BirchForestBiome;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,11 +19,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import mod.equinox.buildbasics.block.ModBlocks.*;
+import mod.equinox.buildbasics.ConfigHelper;
 
 import java.util.stream.Collectors;
-
-import static mod.equinox.buildbasics.block.ModBlocks.*;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -427,6 +416,7 @@ public class BuildBasics {
 public class BuildBasics {
 
     public static final String MODID = "buildbasics";
+    public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     public BuildBasics() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -440,14 +430,14 @@ public class BuildBasics {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_CONFIG);
 
-        Config.loadConfig(Config.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("buildbasics-client.toml"));
-        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("buildbasics-common.toml"));
+        Config.loadConfig(Config.CLIENT_CONFIG, FMLPaths.CONFIGDIR.get().resolve("buildbasics-client.toml").toString());
+        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("buildbasics-common.toml").toString());
     }
 
     public void setupClient(final FMLClientSetupEvent event) { }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) {
+        //ConfigHelper.register(ModLoadingContext.get(), FMLJavaModLoadingContext.get(), ModConfig.Type.COMMON, Config::new);
         BlockDataRegistry.registerFlammables();
     }
 

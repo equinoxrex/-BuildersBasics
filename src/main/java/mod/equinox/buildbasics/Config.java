@@ -26,36 +26,37 @@ public class Config {
 
 
     static {
-        //COMMON_BUILDER.comment("Quark Compatibility").push(CATEGORY_QUARK);
         setupConfig();
-        //COMMON_BUILDER.pop();
-
         COMMON_CONFIG = COMMON_BUILDER.build();
         CLIENT_CONFIG = CLIENT_BUILDER.build();
     }
 
     private static void setupConfig() {
-        COMMON_BUILDER.comment("Quark Compatibility").push(CATEGORY_QUARK);
+        COMMON_BUILDER.comment("Quark Compatibility");//.push(CATEGORY_QUARK);
 
-        QUARK_STONE_BRICK_TYPES = COMMON_BUILDER.comment("Are the stone brick type blocks (that are also in quark) turned on")
+        QUARK_STONE_BRICK_TYPES = COMMON_BUILDER.comment("Are the stone brick type blocks (that are also in quark) registered")
                 .define("quark_and_bb_bricks", true);
-        QUARK_SMALL_STONE_BRICK_TYPES = COMMON_BUILDER.comment("Are the small stone brick type blocks (that are similar to quark's pavement blocks) turned on")
+        QUARK_SMALL_STONE_BRICK_TYPES = COMMON_BUILDER.comment("Are the small stone brick type blocks (that are similar to quark's pavement blocks) registered")
                 .define("quark_and_bb_small_bricks", true);
-        QUARK_CANDLES = COMMON_BUILDER.comment("Are candles (that are also in quark) turned on")
+        QUARK_CANDLES = COMMON_BUILDER.comment("Are candles (that are also in quark) registered")
                 .define("quark_and_bb_candles", true);
 
-        COMMON_BUILDER.pop();
+        //COMMON_BUILDER.pop();
     }
 
-    public static void loadConfig(ForgeConfigSpec spec, Path path) {
+    public static void loadConfig(ForgeConfigSpec spec, String path) {
 
+        BuildBasics.LOGGER.info("Loading config: " + path);
         final CommentedFileConfig configData = CommentedFileConfig.builder(path)
                 .sync()
                 .autosave()
                 .writingMode(WritingMode.REPLACE)
                 .build();
 
+        BuildBasics.LOGGER.info("Built config: " + path);
         configData.load();
+
+        BuildBasics.LOGGER.info("Loaded config: " + path);
         spec.setConfig(configData);
     }
 
