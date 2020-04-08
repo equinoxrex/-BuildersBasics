@@ -14,7 +14,7 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 
 /**
- * @credit - bageldotjpg
+ * @credit - bageldotjpg & SmellyModder (Luke Tonon)
  */
 
 public class BlockUtilities {
