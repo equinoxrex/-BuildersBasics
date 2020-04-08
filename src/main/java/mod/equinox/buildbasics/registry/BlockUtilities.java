@@ -13,6 +13,10 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.RegistryObject;
 
+/**
+ * @credit - bageldotjpg
+ */
+
 public class BlockUtilities {
 
     public static <I extends Item> RegistryObject<I> createItem(String name, Supplier<? extends I> supplier) {
