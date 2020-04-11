@@ -4,6 +4,11 @@ import mod.equinox.buildbasics.BuildBasics;
 import mod.equinox.buildbasics.block.ModBlocks;
 import mod.equinox.buildbasics.registry.BlockUtilities;
 import net.minecraft.block.Block;
+import net.minecraft.block.RotatedPillarBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.WallBlock;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -146,6 +151,20 @@ public class BlockRegistry {
     public static RegistryObject<Block> WISTERIA_GLASS_TRAPDOOR = BlockUtilities.createBlockCompat("bloomful", "wisteria_glass_trapdoor", () -> ModBlocks.WISTERIA_GLASS_TRAPDOOR, ItemGroup.REDSTONE);
     public static RegistryObject<Block> IRON_GLASS_TRAPDOOR = BlockUtilities.createBlock("iron_glass_trapdoor", () -> ModBlocks.IRON_GLASS_TRAPDOOR, ItemGroup.REDSTONE);
     public static RegistryObject<Block> IRON_BAR_TRAPDOOR = BlockUtilities.createBlock("iron_bar_trapdoor", () -> ModBlocks.IRON_BAR_TRAPDOOR, ItemGroup.REDSTONE);
+
+    public static RegistryObject<Block> TUDOR_BLOCK = BlockUtilities.createBlock("tudor_block", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> TUDOR_FRAME = BlockUtilities.createBlock("tudor_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> TUDOR_CROSS = BlockUtilities.createBlock("tudor_cross_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> TUDOR_PILLAR = BlockUtilities.createBlock("tudor_pillar_frame", ()  -> new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> TUDOR_FORWARD_LINE = BlockUtilities.createBlock("tudor_forward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> TUDOR_BACKWARD_LINE = BlockUtilities.createBlock("tudor_backward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_BLOCK = BlockUtilities.createBlock("brown_tudor_block", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_FRAME = BlockUtilities.createBlock("brown_tudor_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_CROSS = BlockUtilities.createBlock("brown_tudor_cross_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_PILLAR = BlockUtilities.createBlock("brown_tudor_pillar_frame", ()  -> new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_FORWARD_LINE = BlockUtilities.createBlock("brown_tudor_forward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> BROWN_TUDOR_BACKWARD_LINE = BlockUtilities.createBlock("brown_tudor_backward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
+
 
     public static RegistryObject<Block> WHITE_CANDLE = BlockUtilities.createBlockConfig("candles", "white_candle", () -> ModBlocks.WHITE_CANDLE, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> ORANGE_CANDLE = BlockUtilities.createBlockConfig("candles", "orange_candle", () -> ModBlocks.ORANGE_CANDLE, ItemGroup.DECORATIONS);

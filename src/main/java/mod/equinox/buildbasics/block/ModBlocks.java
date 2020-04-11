@@ -277,7 +277,6 @@ public class ModBlocks {
     public static Block BIRCH_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("birch_board_wall");
     public static Block JUNGLE_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("jungle_board_wall");
     public static Block ACACIA_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("acacia_board_wall");
-    public static Block DARK_OAK_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("dark_oak_board_wall");
 
     public static Block RED_NETHER_BRICK_FENCE = new FenceBlock(Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).hardnessAndResistance(2.0F,6.0F));//.setRegistryName("red_nether_brick_fence");
 

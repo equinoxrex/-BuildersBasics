@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "buildbasics:block/tudor_pillar_top",
+        "side": "buildbasics:block/tudor_pillar"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y": { "model": "buildbasics:block/brown_tudor_pillar_frame" },
+        "axis=z": { "model": "buildbasics:block/brown_tudor_pillar_frame", "x": 90 },
+        "axis=x": { "model": "buildbasics:block/brown_tudor_pillar_frame", "x": 90, "y": 90 }
+    }
+}
