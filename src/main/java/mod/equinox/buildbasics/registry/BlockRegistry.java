@@ -1,6 +1,7 @@
 package mod.equinox.buildbasics.registry;
 
 import mod.equinox.buildbasics.BuildBasics;
+import mod.equinox.buildbasics.block.CandlestickBlock;
 import mod.equinox.buildbasics.block.ModBlocks;
 import mod.equinox.buildbasics.registry.BlockUtilities;
 import net.minecraft.block.Block;
@@ -182,6 +183,8 @@ public class BlockRegistry {
     public static RegistryObject<Block> GREEN_CANDLE = BlockUtilities.createBlockConfig("candles", "green_candle", () -> ModBlocks.GREEN_CANDLE, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> RED_CANDLE = BlockUtilities.createBlockConfig("candles", "red_candle", () -> ModBlocks.RED_CANDLE, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> BLACK_CANDLE = BlockUtilities.createBlockConfig("candles", "black_candle", () -> ModBlocks.BLACK_CANDLE, ItemGroup.DECORATIONS);
+
+    public static RegistryObject<Block> CANDLESTICK = BlockUtilities.createBlock("candlestick", () -> new CandlestickBlock(Block.Properties.create(Material.IRON, MaterialColor.IRON).hardnessAndResistance(5.0F)), ItemGroup.DECORATIONS);
 
     public static RegistryObject<Block> SMOOTH_STONE_STAIRS = BlockUtilities.createBlock("smooth_stone_stairs", () -> ModBlocks.SMOOTH_STONE_STAIRS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> CRACKED_STONE_BRICK_STAIRS = BlockUtilities.createBlock("cracked_stone_brick_stairs", () -> ModBlocks.CRACKED_STONE_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);

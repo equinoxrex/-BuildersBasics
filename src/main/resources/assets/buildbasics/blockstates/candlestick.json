@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=down,candle=none":  { "model": "buildbasics:block/candlestick_none" },
+        "facing=down":  { "model": "buildbasics:block/candlestick"},
+        "candle=none":  { "model": "buildbasics:block/candlestick_wall_none" },
+        "":  { "model": "buildbasics:block/candlestick_wall" }
+    }
+}
