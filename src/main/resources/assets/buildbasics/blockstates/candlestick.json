@@ -1,8 +1,14 @@
 {
     "variants": {
         "facing=down,candle=none":  { "model": "buildbasics:block/candlestick_none" },
-        "facing=down":  { "model": "buildbasics:block/candlestick"},
-        "candle=none":  { "model": "buildbasics:block/candlestick_wall_none" },
-        "":  { "model": "buildbasics:block/candlestick_wall" }
+        "facing=south,candle=none":  { "model": "buildbasics:block/candlestick_wall_none" },
+        "facing=west,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 90 },
+        "facing=north,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 180 },
+        "facing=east,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 270 },
+        "facing=down,candle=white_candle":  { "model": "buildbasics:block/candlestick"},
+        "facing=south,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall" },
+        "facing=west,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 90 },
+        "facing=north,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 180 },
+        "facing=east,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 270 }
     }
 }

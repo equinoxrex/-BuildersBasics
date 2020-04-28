@@ -79,27 +79,41 @@ public class CandlestickBlock extends Block {
         Direction direction = context.getFace();
         BlockPos blockpos = context.getPos();
         BlockState blockstate = this.getDefaultState();
-        if (direction == Direction.DOWN) {
+        if (direction == Direction.UP) {
             blockstate = blockstate.with(FACING, Direction.DOWN);
         }
         else {
-            blockstate = blockstate.with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+            blockstate = blockstate.with(FACING, direction);
         }
         return blockstate;
     }
 
-    /**
-     * Update the provided state given the provided neighbor facing and neighbor state, returning a new state.
-     * For example, fences make their connections to the passed in state if possible, and wet concrete powder immediately
-     * returns its solidified counterpart.
-     * Note that this method should ideally consider only the specific face passed in.
-     */
-    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-        return facing == Direction.DOWN && !this.isValidPosition(stateIn, worldIn, currentPos) ? Blocks.AIR.getDefaultState() : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
-    }
-
+//    /**
+//     * Update the provided state given the provided neighbor facing and neighbor state, returning a new state.
+//     * For example, fences make their connections to the passed in state if possible, and wet concrete powder immediately
+//     * returns its solidified counterpart.
+//     * Note that this method should ideally consider only the specific face passed in.
+//     */
+//    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+//        return facing == Direction.DOWN && !this.isValidPosition(stateIn, worldIn, currentPos) ? Blocks.AIR.getDefaultState() : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+//    }
+//
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
-        return hasEnoughSolidSide(worldIn, pos.down(), Direction.UP);
+        if(state.get(FACING) == Direction.NORTH) {
+            return hasEnoughSolidSide(worldIn, pos.south(), Direction.NORTH);
+        }
+        else if(state.get(FACING) == Direction.SOUTH) {
+            return hasEnoughSolidSide(worldIn, pos.north(), Direction.SOUTH);
+        }
+        else if(state.get(FACING) == Direction.WEST) {
+            return hasEnoughSolidSide(worldIn, pos.east(), Direction.WEST);
+        }
+        else if(state.get(FACING) == Direction.EAST) {
+            return hasEnoughSolidSide(worldIn, pos.west(), Direction.EAST);
+        }
+        else {
+            return hasEnoughSolidSide(worldIn, pos.down(), Direction.UP);
+        }
     }
 
     /**
@@ -108,12 +122,31 @@ public class CandlestickBlock extends Block {
      * of whether the block can receive random update ticks
      */
     @OnlyIn(Dist.CLIENT)
-    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        double d0 = (double)pos.getX() + 0.5D;
-        double d1 = (double)pos.getY() + 0.7D;
-        double d2 = (double)pos.getZ() + 0.5D;
-        worldIn.addParticle(ParticleTypes.SMOKE, d0, d1, d2, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(ParticleTypes.FLAME, d0, d1, d2, 0.0D, 0.0D, 0.0D);
+    public void animateTick(BlockState state, World worldIn, BlockPos pos, Random rand) {
+        double x = (double)pos.getX();
+        double y = (double)pos.getY();
+        double z = (double)pos.getZ();
+
+        if(state.get(FACING) == Direction.NORTH && state.get(CANDLE) != EnumCandle.NONE) {
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.875D, z+0.8125D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.875D, z+0.8125D, 0.002D, 0.01D, 0.002D);
+        }
+        else if(state.get(FACING) == Direction.SOUTH && state.get(CANDLE) != EnumCandle.NONE) {
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.875D, z+0.1975D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.875D, z+0.1975D, 0.002D, 0.01D, 0.002D);
+        }
+        else if(state.get(FACING) == Direction.WEST && state.get(CANDLE) != EnumCandle.NONE) {
+            worldIn.addParticle(ParticleTypes.SMOKE, z+0.8125D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, z+0.8125D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+        }
+        else if(state.get(FACING) == Direction.EAST && state.get(CANDLE) != EnumCandle.NONE) {
+            worldIn.addParticle(ParticleTypes.SMOKE, z+0.1975D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, z+0.1975D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+        }
+        else if (state.get(FACING) == Direction.DOWN && state.get(CANDLE) != EnumCandle.NONE) {
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.8125D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.8125D, z+0.5D, 0.002D, 0.01D, 0.002D);
+        }
     }
 
     /**
