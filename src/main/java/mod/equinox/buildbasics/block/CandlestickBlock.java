@@ -63,13 +63,13 @@ public class CandlestickBlock extends Block {
         ItemStack itemstack = player.getHeldItem(handIn);
         Item item = itemstack.getItem();
         if (state.get(CANDLE) == EnumCandle.NONE) {
-            System.out.println(item.toString());
-            if (item.toString().equals("candlestick")) { worldIn.setBlockState(pos, state.with(CANDLE, EnumCandle.BLACK), 3); }
             for (EnumCandle enumcandle : EnumCandle.values()) {
-                if (item.toString().equals(enumcandle.toString())) { worldIn.setBlockState(pos, state.with(CANDLE, enumcandle), 3); }
-            }
-            if (!player.abilities.isCreativeMode) {
-                itemstack.shrink(1);
+                if (item.toString().equals(enumcandle.toString())) {
+                    worldIn.setBlockState(pos, state.with(CANDLE, enumcandle), 3);
+                    if (!player.abilities.isCreativeMode) {
+                        itemstack.shrink(1);
+                    }
+                }
             }
         }
         return true;
@@ -128,24 +128,24 @@ public class CandlestickBlock extends Block {
         double z = (double)pos.getZ();
 
         if(state.get(FACING) == Direction.NORTH && state.get(CANDLE) != EnumCandle.NONE) {
-            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.875D, z+0.8125D, 0.002D, 0.01D, 0.002D);
-            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.875D, z+0.8125D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.9D, z+0.8125D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.9D, z+0.8125D, 0.002D, 0.01D, 0.002D);
         }
         else if(state.get(FACING) == Direction.SOUTH && state.get(CANDLE) != EnumCandle.NONE) {
-            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.875D, z+0.1975D, 0.002D, 0.01D, 0.002D);
-            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.875D, z+0.1975D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.9D, z+0.1975D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.9D, z+0.1975D, 0.002D, 0.01D, 0.002D);
         }
         else if(state.get(FACING) == Direction.WEST && state.get(CANDLE) != EnumCandle.NONE) {
-            worldIn.addParticle(ParticleTypes.SMOKE, z+0.8125D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
-            worldIn.addParticle(ParticleTypes.FLAME, z+0.8125D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.SMOKE, z+0.8125D, y+0.9D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, z+0.8125D, y+0.9D, z+0.5D, 0.002D, 0.01D, 0.002D);
         }
         else if(state.get(FACING) == Direction.EAST && state.get(CANDLE) != EnumCandle.NONE) {
-            worldIn.addParticle(ParticleTypes.SMOKE, z+0.1975D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
-            worldIn.addParticle(ParticleTypes.FLAME, z+0.1975D, y+0.875D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.SMOKE, z+0.1975D, y+0.9D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, z+0.1975D, y+0.9D, z+0.5D, 0.002D, 0.01D, 0.002D);
         }
         else if (state.get(FACING) == Direction.DOWN && state.get(CANDLE) != EnumCandle.NONE) {
-            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.8125D, z+0.5D, 0.002D, 0.01D, 0.002D);
-            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.8125D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.SMOKE, x+0.5D, y+0.8625D, z+0.5D, 0.002D, 0.01D, 0.002D);
+            worldIn.addParticle(ParticleTypes.FLAME, x+0.5D, y+0.8625D, z+0.5D, 0.002D, 0.01D, 0.002D);
         }
     }
 

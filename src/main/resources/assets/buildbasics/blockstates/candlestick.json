@@ -1,14 +1,105 @@
 {
     "variants": {
         "facing=down,candle=none":  { "model": "buildbasics:block/candlestick_none" },
-        "facing=south,candle=none":  { "model": "buildbasics:block/candlestick_wall_none" },
-        "facing=west,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 90 },
-        "facing=north,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 180 },
-        "facing=east,candle=none":  { "model": "buildbasics:block/candlestick_wall_none", "y": 270 },
-        "facing=down,candle=white_candle":  { "model": "buildbasics:block/candlestick"},
-        "facing=south,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall" },
-        "facing=west,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 90 },
-        "facing=north,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 180 },
-        "facing=east,candle=white_candle":  { "model": "buildbasics:block/candlestick_wall", "y": 270 }
+        "facing=south,candle=none":  { "model": "buildbasics:block/candlestick_none_wall" },
+        "facing=west,candle=none":  { "model": "buildbasics:block/candlestick_none_wall", "y": 90 },
+        "facing=north,candle=none":  { "model": "buildbasics:block/candlestick_none_wall", "y": 180 },
+        "facing=east,candle=none":  { "model": "buildbasics:block/candlestick_none_wall", "y": 270 },
+
+        "facing=down,candle=black_candle":  { "model": "buildbasics:block/candlestick_black"},
+        "facing=south,candle=black_candle":  { "model": "buildbasics:block/candlestick_black_wall" },
+        "facing=west,candle=black_candle":  { "model": "buildbasics:block/candlestick_black_wall", "y": 90 },
+        "facing=north,candle=black_candle":  { "model": "buildbasics:block/candlestick_black_wall", "y": 180 },
+        "facing=east,candle=black_candle":  { "model": "buildbasics:block/candlestick_black_wall", "y": 270 },
+
+        "facing=down,candle=blue_candle":  { "model": "buildbasics:block/candlestick_blue"},
+        "facing=south,candle=blue_candle":  { "model": "buildbasics:block/candlestick_blue_wall" },
+        "facing=west,candle=blue_candle":  { "model": "buildbasics:block/candlestick_blue_wall", "y": 90 },
+        "facing=north,candle=blue_candle":  { "model": "buildbasics:block/candlestick_blue_wall", "y": 180 },
+        "facing=east,candle=blue_candle":  { "model": "buildbasics:block/candlestick_blue_wall", "y": 270 },
+
+        "facing=down,candle=brown_candle":  { "model": "buildbasics:block/candlestick_brown"},
+        "facing=south,candle=brown_candle":  { "model": "buildbasics:block/candlestick_brown_wall" },
+        "facing=west,candle=brown_candle":  { "model": "buildbasics:block/candlestick_brown_wall", "y": 90 },
+        "facing=north,candle=brown_candle":  { "model": "buildbasics:block/candlestick_brown_wall", "y": 180 },
+        "facing=east,candle=brown_candle":  { "model": "buildbasics:block/candlestick_brown_wall", "y": 270 },
+
+        "facing=down,candle=cyan_candle":  { "model": "buildbasics:block/candlestick_cyan"},
+        "facing=south,candle=cyan_candle":  { "model": "buildbasics:block/candlestick_cyan_wall" },
+        "facing=west,candle=cyan_candle":  { "model": "buildbasics:block/candlestick_cyan_wall", "y": 90 },
+        "facing=north,candle=cyan_candle":  { "model": "buildbasics:block/candlestick_cyan_wall", "y": 180 },
+        "facing=east,candle=cyan_candle":  { "model": "buildbasics:block/candlestick_cyan_wall", "y": 270 },
+
+        "facing=down,candle=gray_candle":  { "model": "buildbasics:block/candlestick_gray"},
+        "facing=south,candle=gray_candle":  { "model": "buildbasics:block/candlestick_gray_wall" },
+        "facing=west,candle=gray_candle":  { "model": "buildbasics:block/candlestick_gray_wall", "y": 90 },
+        "facing=north,candle=gray_candle":  { "model": "buildbasics:block/candlestick_gray_wall", "y": 180 },
+        "facing=east,candle=gray_candle":  { "model": "buildbasics:block/candlestick_gray_wall", "y": 270 },
+
+        "facing=down,candle=green_candle":  { "model": "buildbasics:block/candlestick_green"},
+        "facing=south,candle=green_candle":  { "model": "buildbasics:block/candlestick_green_wall" },
+        "facing=west,candle=green_candle":  { "model": "buildbasics:block/candlestick_green_wall", "y": 90 },
+        "facing=north,candle=green_candle":  { "model": "buildbasics:block/candlestick_green_wall", "y": 180 },
+        "facing=east,candle=green_candle":  { "model": "buildbasics:block/candlestick_green_wall", "y": 270 },
+
+        "facing=down,candle=light_blue_candle":  { "model": "buildbasics:block/candlestick_light_blue"},
+        "facing=south,candle=light_blue_candle":  { "model": "buildbasics:block/candlestick_light_blue_wall" },
+        "facing=west,candle=light_blue_candle":  { "model": "buildbasics:block/candlestick_light_blue_wall", "y": 90 },
+        "facing=north,candle=light_blue_candle":  { "model": "buildbasics:block/candlestick_light_blue_wall", "y": 180 },
+        "facing=east,candle=light_blue_candle":  { "model": "buildbasics:block/candlestick_light_blue_wall", "y": 270 },
+
+        "facing=down,candle=light_gray_candle":  { "model": "buildbasics:block/candlestick_light_gray"},
+        "facing=south,candle=light_gray_candle":  { "model": "buildbasics:block/candlestick_light_gray_wall" },
+        "facing=west,candle=light_gray_candle":  { "model": "buildbasics:block/candlestick_light_gray_wall", "y": 90 },
+        "facing=north,candle=light_gray_candle":  { "model": "buildbasics:block/candlestick_light_gray_wall", "y": 180 },
+        "facing=east,candle=light_gray_candle":  { "model": "buildbasics:block/candlestick_light_gray_wall", "y": 270 },
+
+        "facing=down,candle=lime_candle":  { "model": "buildbasics:block/candlestick_lime"},
+        "facing=south,candle=lime_candle":  { "model": "buildbasics:block/candlestick_lime_wall" },
+        "facing=west,candle=lime_candle":  { "model": "buildbasics:block/candlestick_lime_wall", "y": 90 },
+        "facing=north,candle=lime_candle":  { "model": "buildbasics:block/candlestick_lime_wall", "y": 180 },
+        "facing=east,candle=lime_candle":  { "model": "buildbasics:block/candlestick_lime_wall", "y": 270 },
+
+        "facing=down,candle=magenta_candle":  { "model": "buildbasics:block/candlestick_magenta"},
+        "facing=south,candle=magenta_candle":  { "model": "buildbasics:block/candlestick_magenta_wall" },
+        "facing=west,candle=magenta_candle":  { "model": "buildbasics:block/candlestick_magenta_wall", "y": 90 },
+        "facing=north,candle=magenta_candle":  { "model": "buildbasics:block/candlestick_magenta_wall", "y": 180 },
+        "facing=east,candle=magenta_candle":  { "model": "buildbasics:block/candlestick_magenta_wall", "y": 270 },
+
+        "facing=down,candle=orange_candle":  { "model": "buildbasics:block/candlestick_orange"},
+        "facing=south,candle=orange_candle":  { "model": "buildbasics:block/candlestick_orange_wall" },
+        "facing=west,candle=orange_candle":  { "model": "buildbasics:block/candlestick_orange_wall", "y": 90 },
+        "facing=north,candle=orange_candle":  { "model": "buildbasics:block/candlestick_orange_wall", "y": 180 },
+        "facing=east,candle=orange_candle":  { "model": "buildbasics:block/candlestick_orange_wall", "y": 270 },
+
+        "facing=down,candle=pink_candle":  { "model": "buildbasics:block/candlestick_pink"},
+        "facing=south,candle=pink_candle":  { "model": "buildbasics:block/candlestick_pink_wall" },
+        "facing=west,candle=pink_candle":  { "model": "buildbasics:block/candlestick_pink_wall", "y": 90 },
+        "facing=north,candle=pink_candle":  { "model": "buildbasics:block/candlestick_pink_wall", "y": 180 },
+        "facing=east,candle=pink_candle":  { "model": "buildbasics:block/candlestick_pink_wall", "y": 270 },
+
+        "facing=down,candle=purple_candle":  { "model": "buildbasics:block/candlestick_purple"},
+        "facing=south,candle=purple_candle":  { "model": "buildbasics:block/candlestick_purple_wall" },
+        "facing=west,candle=purple_candle":  { "model": "buildbasics:block/candlestick_purple_wall", "y": 90 },
+        "facing=north,candle=purple_candle":  { "model": "buildbasics:block/candlestick_purple_wall", "y": 180 },
+        "facing=east,candle=purple_candle":  { "model": "buildbasics:block/candlestick_purple_wall", "y": 270 },
+
+        "facing=down,candle=red_candle":  { "model": "buildbasics:block/candlestick_red"},
+        "facing=south,candle=red_candle":  { "model": "buildbasics:block/candlestick_red_wall" },
+        "facing=west,candle=red_candle":  { "model": "buildbasics:block/candlestick_red_wall", "y": 90 },
+        "facing=north,candle=red_candle":  { "model": "buildbasics:block/candlestick_red_wall", "y": 180 },
+        "facing=east,candle=red_candle":  { "model": "buildbasics:block/candlestick_red_wall", "y": 270 },
+
+        "facing=down,candle=white_candle":  { "model": "buildbasics:block/candlestick_white"},
+        "facing=south,candle=white_candle":  { "model": "buildbasics:block/candlestick_white_wall" },
+        "facing=west,candle=white_candle":  { "model": "buildbasics:block/candlestick_white_wall", "y": 90 },
+        "facing=north,candle=white_candle":  { "model": "buildbasics:block/candlestick_white_wall", "y": 180 },
+        "facing=east,candle=white_candle":  { "model": "buildbasics:block/candlestick_white_wall", "y": 270 },
+
+        "facing=down,candle=yellow_candle":  { "model": "buildbasics:block/candlestick_yellow"},
+        "facing=south,candle=yellow_candle":  { "model": "buildbasics:block/candlestick_yellow_wall" },
+        "facing=west,candle=yellow_candle":  { "model": "buildbasics:block/candlestick_yellow_wall", "y": 90 },
+        "facing=north,candle=yellow_candle":  { "model": "buildbasics:block/candlestick_yellow_wall", "y": 180 },
+        "facing=east,candle=yellow_candle":  { "model": "buildbasics:block/candlestick_yellow_wall", "y": 270 }
     }
 }

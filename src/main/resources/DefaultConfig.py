@@ -1,4 +1,4 @@
-modID = "modid"
+modID = "buildbasics"
 
 Blockstate = "cube"
 Block = True

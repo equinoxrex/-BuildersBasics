@@ -1,0 +1,6 @@
+{
+    "parent": "buildbasics:block/template_candlestick_wall",
+    "textures": {
+        "texture": "buildbasics:block/candlestick_yellow"
+    }
+}
