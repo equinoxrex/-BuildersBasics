@@ -60,8 +60,8 @@ public class CandleBlock extends BushBlock implements IWaterLoggable {
         return !p_200014_1_.getCollisionShape(p_200014_2_, p_200014_3_).project(Direction.UP).isEmpty();
     }
 
-    public boolean isValidPosition(BlockState p_196260_1_, IWorldReader p_196260_2_, BlockPos p_196260_3_) {
-        BlockPos lvt_4_1_ = p_196260_3_.down();
+    public boolean isValidPosition(BlockState p_196260_1_, IWorldReader p_196260_2_, BlockPos pos) {
+        BlockPos lvt_4_1_ = pos.down();
         return this.isValidGround(p_196260_2_.getBlockState(lvt_4_1_), p_196260_2_, lvt_4_1_);
     }
 

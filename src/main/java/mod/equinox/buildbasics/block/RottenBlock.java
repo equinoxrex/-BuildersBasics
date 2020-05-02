@@ -9,7 +9,6 @@ import net.minecraft.entity.passive.TurtleEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -62,10 +61,6 @@ public class RottenBlock extends Block {
             p_203166_1_.playEvent(2001, p_203166_2_, Block.getStateId(p_203166_3_));
         }
 
-    }
-
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.SOLID;
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) { builder.add(STRENGTH); }

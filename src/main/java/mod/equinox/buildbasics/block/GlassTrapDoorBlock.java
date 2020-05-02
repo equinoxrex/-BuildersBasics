@@ -15,7 +15,7 @@ import net.minecraft.state.EnumProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.state.properties.Half;
-import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -74,9 +74,9 @@ public class GlassTrapDoorBlock extends HorizontalBlock implements IWaterLoggabl
         }
     }
 
-    public boolean onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         if (this.material == Material.IRON) {
-            return false;
+            return ActionResultType.PASS;
         } else {
             state = state.cycle(OPEN);
             worldIn.setBlockState(pos, state, 2);
@@ -85,7 +85,7 @@ public class GlassTrapDoorBlock extends HorizontalBlock implements IWaterLoggabl
             }
 
             this.playSound(player, worldIn, pos, state.get(OPEN));
-            return true;
+            return ActionResultType.SUCCESS;
         }
     }
 
@@ -139,9 +139,6 @@ public class GlassTrapDoorBlock extends HorizontalBlock implements IWaterLoggabl
      * Gets the render layer this block will render on. SOLID for solid blocks, CUTOUT or CUTOUT_MIPPED for on-off
      * transparency (glass, reeds), TRANSLUCENT for fully blended transparency (stained glass)
      */
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(HORIZONTAL_FACING, OPEN, HALF, POWERED, WATERLOGGED);

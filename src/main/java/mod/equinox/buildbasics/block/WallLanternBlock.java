@@ -12,7 +12,6 @@ import net.minecraft.particles.ParticleTypes;
 import net.minecraft.pathfinding.PathType;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
@@ -56,15 +55,11 @@ public class WallLanternBlock extends Block {
         return SHAPES.get(p_220289_0_.get(HORIZONTAL_FACING));
     }
 
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
-
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
         Direction direction = state.get(HORIZONTAL_FACING);
         BlockPos blockpos = pos.offset(direction.getOpposite());
         BlockState blockstate = worldIn.getBlockState(blockpos);
-        return blockstate.func_224755_d(worldIn, blockpos, direction);
+        return blockstate.isSolidSide(worldIn, blockpos, direction);
     }
 
     @Nullable

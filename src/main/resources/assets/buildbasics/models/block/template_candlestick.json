@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"texture": "buildbasics:block/candlestick",
-		"particle": "buildbasics:block/candlestick"
+		"texture": "buildbasics:block/candlestick_white",
+		"particle": "buildbasics:block/candlestick_white"
 	},
 	"elements": [
 		{

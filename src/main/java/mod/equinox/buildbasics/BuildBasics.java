@@ -435,7 +435,9 @@ public class BuildBasics {
         Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("buildbasics-common.toml").toString());
     }
 
-    public void setupClient(final FMLClientSetupEvent event) { }
+    public void setupClient(final FMLClientSetupEvent event) {
+        BlockDataRegistry.setRenderLayers();
+    }
 
     private void setup(final FMLCommonSetupEvent event) {
         //ConfigHelper.register(ModLoadingContext.get(), FMLJavaModLoadingContext.get(), ModConfig.Type.COMMON, Config::new);

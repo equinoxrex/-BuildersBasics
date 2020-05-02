@@ -17,7 +17,7 @@ import net.minecraft.state.EnumProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.stats.Stats;
-import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -59,12 +59,16 @@ public class CandlestickBlock extends Block {
         else { return state.get(CANDLE) == EnumCandle.NONE ? SHAPE_STICK_FLOOR: SHAPE_CANDLE_FLOOR; }
     }
 
-    public boolean onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         ItemStack itemstack = player.getHeldItem(handIn);
         Item item = itemstack.getItem();
+        System.out.println(item.toString() + "1");
         if (state.get(CANDLE) == EnumCandle.NONE) {
+            System.out.println(item.toString() + "2");
             for (EnumCandle enumcandle : EnumCandle.values()) {
+                System.out.println(item.toString() + "3");
                 if (item.toString().equals(enumcandle.toString())) {
+                    System.out.println(item.toString() + "4");
                     worldIn.setBlockState(pos, state.with(CANDLE, enumcandle), 3);
                     if (!player.abilities.isCreativeMode) {
                         itemstack.shrink(1);
@@ -72,7 +76,7 @@ public class CandlestickBlock extends Block {
                 }
             }
         }
-        return true;
+        return ActionResultType.SUCCESS;
     }
 
     public BlockState getStateForPlacement(BlockItemUseContext context) {
@@ -149,13 +153,6 @@ public class CandlestickBlock extends Block {
         }
     }
 
-    /**
-     * Gets the render layer this block will render on. SOLID for solid blocks, CUTOUT or CUTOUT_MIPPED for on-off
-     * transparency (glass, reeds), TRANSLUCENT for fully blended transparency (stained glass)
-     */
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) { builder.add(FACING, CANDLE); }
 

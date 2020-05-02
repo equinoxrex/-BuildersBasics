@@ -147,7 +147,7 @@ public class GlassDoorBlock extends Block {
         BlockState lvt_13_1_ = lvt_2_1_.getBlockState(lvt_12_1_);
         BlockPos lvt_14_1_ = lvt_5_1_.offset(lvt_11_1_);
         BlockState lvt_15_1_ = lvt_2_1_.getBlockState(lvt_14_1_);
-        int lvt_16_1_ = (lvt_8_1_.func_224756_o(lvt_2_1_, lvt_7_1_) ? -1 : 0) + (lvt_10_1_.func_224756_o(lvt_2_1_, lvt_9_1_) ? -1 : 0) + (lvt_13_1_.func_224756_o(lvt_2_1_, lvt_12_1_) ? 1 : 0) + (lvt_15_1_.func_224756_o(lvt_2_1_, lvt_14_1_) ? 1 : 0);
+        int lvt_16_1_ = (lvt_8_1_.isCollisionShapeOpaque(lvt_2_1_, lvt_7_1_) ? -1 : 0) + (lvt_10_1_.isCollisionShapeOpaque(lvt_2_1_, lvt_9_1_) ? -1 : 0) + (lvt_13_1_.isCollisionShapeOpaque(lvt_2_1_, lvt_12_1_) ? 1 : 0) + (lvt_15_1_.isCollisionShapeOpaque(lvt_2_1_, lvt_14_1_) ? 1 : 0);
         boolean lvt_17_1_ = lvt_8_1_.getBlock() == this && lvt_8_1_.get(HALF) == DoubleBlockHalf.LOWER;
         boolean lvt_18_1_ = lvt_13_1_.getBlock() == this && lvt_13_1_.get(HALF) == DoubleBlockHalf.LOWER;
         if ((!lvt_17_1_ || lvt_18_1_) && lvt_16_1_ <= 0) {
@@ -166,14 +166,14 @@ public class GlassDoorBlock extends Block {
         }
     }
 
-    public boolean onBlockActivated(BlockState p_220051_1_, World p_220051_2_, BlockPos p_220051_3_, PlayerEntity p_220051_4_, Hand p_220051_5_, BlockRayTraceResult p_220051_6_) {
+    public ActionResultType onBlockActivated(BlockState p_220051_1_, World p_220051_2_, BlockPos p_220051_3_, PlayerEntity p_220051_4_, Hand p_220051_5_, BlockRayTraceResult p_220051_6_) {
         if (this.material == Material.IRON) {
-            return false;
+            return ActionResultType.PASS;
         } else {
             p_220051_1_ = (BlockState)p_220051_1_.cycle(OPEN);
             p_220051_2_.setBlockState(p_220051_3_, p_220051_1_, 10);
             p_220051_2_.playEvent(p_220051_4_, (Boolean)p_220051_1_.get(OPEN) ? this.getOpenSound() : this.getCloseSound(), p_220051_3_, 0);
-            return true;
+            return ActionResultType.SUCCESS;
         }
     }
 
@@ -201,7 +201,7 @@ public class GlassDoorBlock extends Block {
         BlockPos lvt_4_1_ = p_196260_3_.down();
         BlockState lvt_5_1_ = p_196260_2_.getBlockState(lvt_4_1_);
         if (p_196260_1_.get(HALF) == DoubleBlockHalf.LOWER) {
-            return lvt_5_1_.func_224755_d(p_196260_2_, lvt_4_1_, Direction.UP);
+            return lvt_5_1_.isSolidSide(p_196260_2_, lvt_4_1_, Direction.UP);
         } else {
             return lvt_5_1_.getBlock() == this;
         }
@@ -215,10 +215,6 @@ public class GlassDoorBlock extends Block {
         return PushReaction.DESTROY;
     }
 
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
-
     public BlockState rotate(BlockState p_185499_1_, Rotation p_185499_2_) {
         return (BlockState)p_185499_1_.with(FACING, p_185499_2_.rotate((Direction)p_185499_1_.get(FACING)));
     }
@@ -228,8 +224,8 @@ public class GlassDoorBlock extends Block {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public long getPositionRandom(BlockState p_209900_1_, BlockPos p_209900_2_) {
-        return MathHelper.getCoordinateRandom(p_209900_2_.getX(), p_209900_2_.down(p_209900_1_.get(HALF) == DoubleBlockHalf.LOWER ? 0 : 1).getY(), p_209900_2_.getZ());
+    public long getPositionRandom(BlockState state, BlockPos pos) {
+        return MathHelper.getCoordinateRandom(pos.getX(), pos.down(state.get(HALF) == DoubleBlockHalf.LOWER ? 0 : 1).getY(), pos.getZ());
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> p_206840_1_) {
