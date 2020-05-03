@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "buildbasics:item/brown_candle"
+        "layer0": "buildbasics:item/magenta_candle"
     }
 }
