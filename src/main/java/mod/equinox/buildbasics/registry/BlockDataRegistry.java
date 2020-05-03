@@ -2,6 +2,7 @@ package mod.equinox.buildbasics.registry;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraftforge.fml.ModList;
 
 /**
  * @credit - bageldotjpg
@@ -16,30 +17,30 @@ public class BlockDataRegistry {
         RenderType cutout = RenderType.getCutout();
         RenderType translucent = RenderType.getTranslucent();
 
-        RenderTypeLookup.setRenderLayer(BlockRegistry.IRON_CHAIN.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.WALL_LANTERN.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_CHAIN.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.WALL_LANTERN.get(), cutout);
 
-        RenderTypeLookup.setRenderLayer(BlockRegistry.GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.OAK_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.SPRUCE_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.BIRCH_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.JUNGLE_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.ACACIA_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.DARK_OAK_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.DRIFTWOOD_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.WISTERIA_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.IRON_GLASS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.IRON_BAR_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.OAK_GLASS_TRAPDOOR .get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.SPRUCE_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.BIRCH_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.JUNGLE_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.ACACIA_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.DARK_OAK_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.DRIFTWOOD_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.WISTERIA_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.IRON_GLASS_TRAPDOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(BlockRegistry.IRON_BAR_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.OAK_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.SPRUCE_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.BIRCH_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.JUNGLE_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.ACACIA_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.DARK_OAK_GLASS_DOOR.get(), cutout);
+        if(ModList.get().isLoaded("upgrade_aquatic")) { BlockDataUtilities.setRenderLayer(BlockRegistry.DRIFTWOOD_GLASS_DOOR.get(), cutout); }
+        if(ModList.get().isLoaded("bloomful")) { BlockDataUtilities.setRenderLayer(BlockRegistry.WISTERIA_GLASS_DOOR.get(), cutout); }
+        BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_GLASS_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_BAR_DOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.OAK_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.SPRUCE_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.BIRCH_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.JUNGLE_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.ACACIA_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.DARK_OAK_GLASS_TRAPDOOR.get(), cutout);
+        if(ModList.get().isLoaded("upgrade_aquatic")) { BlockDataUtilities.setRenderLayer(BlockRegistry.DRIFTWOOD_GLASS_TRAPDOOR.get(), cutout); }
+        if(ModList.get().isLoaded("bloomful")) { BlockDataUtilities.setRenderLayer(BlockRegistry.WISTERIA_GLASS_TRAPDOOR.get(), cutout); }
+        BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_GLASS_TRAPDOOR.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_BAR_TRAPDOOR.get(), cutout);
     }
 }
