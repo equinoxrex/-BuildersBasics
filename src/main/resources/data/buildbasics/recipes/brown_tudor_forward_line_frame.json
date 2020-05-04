@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CHS",
+    "HDH",
+    "SHC"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:clay"
+    },
+    "H": {
+      "item": "minecraft:hay_block"
+    },
+    "D": {
+      "item": "minecraft:brown_dye"
+    }
+  },
+  "result": {
+    "item": "buildbasics:brown_tudor_forward_line_frame",
+    "count": 4
+  }
+}

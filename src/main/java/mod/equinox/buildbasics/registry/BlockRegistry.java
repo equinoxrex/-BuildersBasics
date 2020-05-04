@@ -165,8 +165,7 @@ public class BlockRegistry {
     public static RegistryObject<Block> BROWN_TUDOR_PILLAR = BlockUtilities.createBlock("brown_tudor_pillar_frame", ()  -> new RotatedPillarBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> BROWN_TUDOR_FORWARD_LINE = BlockUtilities.createBlock("brown_tudor_forward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> BROWN_TUDOR_BACKWARD_LINE = BlockUtilities.createBlock("brown_tudor_backward_line_frame", ()  -> new Block(Block.Properties.create(Material.WOOD, MaterialColor.BROWN_TERRACOTTA).hardnessAndResistance(2.0F).sound(SoundType.WOOD)), ItemGroup.BUILDING_BLOCKS);
-
-
+    
     public static RegistryObject<Block> WHITE_CANDLE = BlockUtilities.createBlockConfig("candles", "white_candle", () -> ModBlocks.WHITE_CANDLE, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> ORANGE_CANDLE = BlockUtilities.createBlockConfig("candles", "orange_candle", () -> ModBlocks.ORANGE_CANDLE, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> MAGENTA_CANDLE = BlockUtilities.createBlockConfig("candles", "magenta_candle", () -> ModBlocks.MAGENTA_CANDLE, ItemGroup.DECORATIONS);

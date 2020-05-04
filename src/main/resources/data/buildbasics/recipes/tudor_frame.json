@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SHS",
+    "CDC",
+    "SHS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:clay"
+    },
+    "H": {
+      "item": "minecraft:hay_block"
+    },
+    "D": {
+      "item": "minecraft:white_dye"
+    }
+  },
+  "result": {
+    "item": "buildbasics:tudor_frame",
+    "count": 4
+  }
+}

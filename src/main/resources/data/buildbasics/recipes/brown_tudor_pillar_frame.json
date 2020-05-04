@@ -1,17 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "## ",
-    "# #",
-    " ##"
+    "#",
+    "#"
   ],
   "key": {
     "#": {
-      "item": "minecraft:iron_nugget"
+      "item": "buildbasics:brown_tudor_frame"
     }
   },
   "result": {
-    "item": "buildbasics:iron_chain",
+    "item": "buildbasics:brown_tudor_pillar_frame",
     "count": 2
   }
 }
