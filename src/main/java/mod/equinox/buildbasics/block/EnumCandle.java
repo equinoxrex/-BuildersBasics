@@ -1,5 +1,9 @@
 package mod.equinox.buildbasics.block;
 
+import mod.equinox.buildbasics.registry.BlockDataUtilities;
+import mod.equinox.buildbasics.registry.BlockRegistry;
+import mod.equinox.buildbasics.registry.ItemRegistry;
+import net.minecraft.item.BlockItem;
 import net.minecraft.util.IStringSerializable;
 
 public enum EnumCandle implements IStringSerializable {
@@ -27,9 +31,7 @@ public enum EnumCandle implements IStringSerializable {
         this.name = name;
     }
 
-    public String toString() {
-        return this.name;
-    }
+    public String toString() { return this.name; }
 
     public String getName() {
         return this.name;

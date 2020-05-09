@@ -20,6 +20,7 @@ import net.minecraft.stats.Stats;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -30,6 +31,7 @@ import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class CandlestickBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING_EXCEPT_UP;
@@ -62,19 +64,25 @@ public class CandlestickBlock extends Block {
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
         ItemStack itemstack = player.getHeldItem(handIn);
         Item item = itemstack.getItem();
-        System.out.println(item.toString() + "1");
         if (state.get(CANDLE) == EnumCandle.NONE) {
-            System.out.println(item.toString() + "2");
             for (EnumCandle enumcandle : EnumCandle.values()) {
-                System.out.println(item.toString() + "3");
                 if (item.toString().equals(enumcandle.toString())) {
-                    System.out.println(item.toString() + "4");
                     worldIn.setBlockState(pos, state.with(CANDLE, enumcandle), 3);
                     if (!player.abilities.isCreativeMode) {
                         itemstack.shrink(1);
                     }
                 }
             }
+        }
+        else {
+            ItemStack dropitem = new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("buildbasics:".concat(state.get(CANDLE).toString()))));
+            //player.addItemStackToInventory(dropitem);
+            if (itemstack.isEmpty()) {
+                player.setHeldItem(handIn, dropitem);
+            } else if (!player.addItemStackToInventory(dropitem)) {
+                player.dropItem(dropitem, false);
+            }
+            worldIn.setBlockState(pos, state.with(CANDLE, EnumCandle.NONE), 3);
         }
         return ActionResultType.SUCCESS;
     }
