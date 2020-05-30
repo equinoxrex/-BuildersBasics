@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "buildbasics:block/chiseled_obsidian_top",
+        "side": "buildbasics:block/chiseled_obsidian"
+    }
+}

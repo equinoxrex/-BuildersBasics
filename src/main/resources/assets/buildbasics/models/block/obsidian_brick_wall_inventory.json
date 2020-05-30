@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "buildbasics:block/obsidian_bricks"
+    }
+}

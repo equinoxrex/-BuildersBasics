@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "buildbasics:block/small_obsidian_bricks"
+        }
+    }
+}

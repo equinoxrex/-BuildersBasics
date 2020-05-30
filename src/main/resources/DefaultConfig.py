@@ -18,4 +18,4 @@ collectionGlass = False
 collectionColour = False
 
 depluralize = True
-overwrite = True
+overwrite = False

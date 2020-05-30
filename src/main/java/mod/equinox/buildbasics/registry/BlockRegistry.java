@@ -2,6 +2,8 @@ package mod.equinox.buildbasics.registry;
 
 import mod.equinox.buildbasics.BuildBasics;
 import mod.equinox.buildbasics.block.CandlestickBlock;
+import mod.equinox.buildbasics.block.ImmovableBlock;
+import mod.equinox.buildbasics.block.ImmovablePillarBlock;
 import mod.equinox.buildbasics.block.ModBlocks;
 import mod.equinox.buildbasics.registry.BlockUtilities;
 import net.minecraft.block.Block;
@@ -44,11 +46,11 @@ public class BlockRegistry {
     public static RegistryObject<Block> CHISELED_ANDESITE = BlockUtilities.createBlockConfig("bricks", "chiseled_andesite", () -> ModBlocks.CHISELED_ANDESITE, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> COBBLESTONE_BRICKS = BlockUtilities.createBlock("cobblestone_bricks", () -> ModBlocks.COBBLESTONE_BRICKS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> MOSSY_COBBLESTONE_BRICKS = BlockUtilities.createBlock("mossy_cobblestone_bricks", () -> ModBlocks.MOSSY_COBBLESTONE_BRICKS, ItemGroup.BUILDING_BLOCKS);
-    public static RegistryObject<Block> POLISHED_OBSIDIAN = BlockUtilities.createBlock("polished_obsidian", () -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
-    public static RegistryObject<Block> OBSIDIAN_BRICKS = BlockUtilities.createBlock("obsidian_bricks", ()  -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
-    public static RegistryObject<Block> SMALL_OBSIDIAN_BRICKS = BlockUtilities.createBlock("small_obsidian_bricks", ()  -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
-    public static RegistryObject<Block> OBSIDIAN_PILLAR = BlockUtilities.createBlock("obsidian_pillar", ()  -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
-    public static RegistryObject<Block> CHISELED_OBSIDIAN = BlockUtilities.createBlock("chiseled_obsidian", ()  -> new Block(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> POLISHED_OBSIDIAN = BlockUtilities.createBlock("polished_obsidian", () -> new ImmovableBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> OBSIDIAN_BRICKS = BlockUtilities.createBlock("obsidian_bricks", ()  -> new ImmovableBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> SMALL_OBSIDIAN_BRICKS = BlockUtilities.createBlock("small_obsidian_bricks", ()  -> new ImmovableBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> OBSIDIAN_PILLAR = BlockUtilities.createBlock("obsidian_pillar", ()  -> new ImmovablePillarBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> CHISELED_OBSIDIAN = BlockUtilities.createBlock("chiseled_obsidian", ()  -> new ImmovableBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
 
     public static RegistryObject<Block> TERRACOTTA_BRICKS = BlockUtilities.createBlock("terracotta_bricks", () -> ModBlocks.TERRACOTTA_BRICKS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> WHITE_TERRACOTTA_BRICKS = BlockUtilities.createBlock("white_terracotta_bricks", () -> ModBlocks.WHITE_TERRACOTTA_BRICKS, ItemGroup.BUILDING_BLOCKS);
