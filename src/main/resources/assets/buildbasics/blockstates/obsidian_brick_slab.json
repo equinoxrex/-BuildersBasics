@@ -7,7 +7,7 @@
             "model": "buildbasics:block/obsidian_brick_slab_top"
         },
         "type=double": {
-            "model": "buildbasics:block/obsidian_bricks_planks"
+            "model": "buildbasics:block/obsidian_bricks"
         }
     }
 }

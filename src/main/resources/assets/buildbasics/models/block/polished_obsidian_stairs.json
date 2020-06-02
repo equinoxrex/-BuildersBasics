@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "buildbasics:block/polished_obsidian",
+        "top": "buildbasics:block/polished_obsidian",
+        "side": "buildbasics:block/polished_obsidian"
+    }
+}

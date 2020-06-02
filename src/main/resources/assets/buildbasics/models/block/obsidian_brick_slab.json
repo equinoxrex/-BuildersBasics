@@ -1,8 +1,8 @@
 {
     "parent": "block/slab",
     "textures": {
-        "bottom": "buildbasics:block/obsidian_bricks_planks",
-        "top": "buildbasics:block/obsidian_bricks_planks",
-        "side": "buildbasics:block/obsidian_bricks_planks"
+        "bottom": "buildbasics:block/obsidian_bricks",
+        "top": "buildbasics:block/obsidian_bricks",
+        "side": "buildbasics:block/obsidian_bricks"
     }
 }

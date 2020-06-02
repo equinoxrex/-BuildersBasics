@@ -10,10 +10,11 @@
     "buildbasics:small_andesite_brick_wall",
     "buildbasics:cobblestone_brick_wall",
     "buildbasics:mossy_cobblestone_brick_wall",
+    "buildbasics:obsidian_brick_wall",
+    "buildbasics:small_obsidian_brick_wall",
     "buildbasics:prismarine_brick_wall",
     "buildbasics:dark_prismarine_wall",
     "buildbasics:dark_prismarine_brick_wall",
-    "buildbasics:small_end_stone_brick_wall",
-    "buildbasics:oak_board_palisade"
+    "buildbasics:small_end_stone_brick_wall"
   ]
 }

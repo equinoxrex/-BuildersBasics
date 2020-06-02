@@ -1,10 +1,7 @@
 package mod.equinox.buildbasics.registry;
 
 import mod.equinox.buildbasics.BuildBasics;
-import mod.equinox.buildbasics.block.CandlestickBlock;
-import mod.equinox.buildbasics.block.ImmovableBlock;
-import mod.equinox.buildbasics.block.ImmovablePillarBlock;
-import mod.equinox.buildbasics.block.ModBlocks;
+import mod.equinox.buildbasics.block.*;
 import mod.equinox.buildbasics.registry.BlockUtilities;
 import net.minecraft.block.Block;
 import net.minecraft.block.RotatedPillarBlock;
@@ -204,6 +201,9 @@ public class BlockRegistry {
     public static RegistryObject<Block> SMALL_ANDESITE_BRICK_STAIRS = BlockUtilities.createBlockConfig("small_bricks", "small_andesite_brick_stairs", () -> ModBlocks.SMALL_ANDESITE_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> COBBLESTONE_BRICK_STAIRS = BlockUtilities.createBlock("cobblestone_brick_stairs", () -> ModBlocks.COBBLESTONE_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> MOSSY_COBBLESTONE_BRICK_STAIRS = BlockUtilities.createBlock("mossy_cobblestone_brick_stairs", () -> ModBlocks.MOSSY_COBBLESTONE_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> POLISHED_OBSIDIAN_STAIRS = BlockUtilities.createBlock("polished_obsidian_stairs", () -> new ImmovableStairsBlock(() -> POLISHED_OBSIDIAN.get().getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> OBSIDIAN_BRICK_STAIRS = BlockUtilities.createBlock("obsidian_brick_stairs", ()  -> new ImmovableStairsBlock(() -> OBSIDIAN_BRICKS.get().getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> SMALL_OBSIDIAN_BRICK_STAIRS = BlockUtilities.createBlock("small_obsidian_brick_stairs", ()  -> new ImmovableStairsBlock(() -> SMALL_OBSIDIAN_BRICKS.get().getDefaultState(), Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> TERRACOTTA_BRICK_STAIRS = BlockUtilities.createBlock("terracotta_brick_stairs", () -> ModBlocks.TERRACOTTA_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> WHITE_TERRACOTTA_BRICK_STAIRS = BlockUtilities.createBlock("white_terracotta_brick_stairs", () -> ModBlocks.WHITE_TERRACOTTA_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> ORANGE_TERRACOTTA_BRICK_STAIRS = BlockUtilities.createBlock("orange_terracotta_brick_stairs", () -> ModBlocks.ORANGE_TERRACOTTA_BRICK_STAIRS, ItemGroup.BUILDING_BLOCKS);
@@ -260,6 +260,9 @@ public class BlockRegistry {
     public static RegistryObject<Block> SMALL_ANDESITE_BRICK_SLAB = BlockUtilities.createBlockConfig("small_bricks", "small_andesite_brick_slab", () -> ModBlocks.SMALL_ANDESITE_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> COBBLESTONE_BRICK_SLAB = BlockUtilities.createBlock("cobblestone_brick_slab", () -> ModBlocks.COBBLESTONE_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> MOSSY_COBBLESTONE_BRICK_SLAB = BlockUtilities.createBlock("mossy_cobblestone_brick_slab", () -> ModBlocks.MOSSY_COBBLESTONE_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> POLISHED_OBSIDIAN_SLAB = BlockUtilities.createBlock("polished_obsidian_slab", () -> new ImmovableSlabBlock(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> OBSIDIAN_BRICK_SLAB = BlockUtilities.createBlock("obsidian_brick_slab", () -> new ImmovableSlabBlock( Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> SMALL_OBSIDIAN_BRICK_SLAB = BlockUtilities.createBlock("small_obsidian_brick_slab", () -> new ImmovableSlabBlock( Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> TERRACOTTA_BRICK_SLAB = BlockUtilities.createBlock("terracotta_brick_slab", () -> ModBlocks.TERRACOTTA_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> WHITE_TERRACOTTA_BRICK_SLAB = BlockUtilities.createBlock("white_terracotta_brick_slab", () -> ModBlocks.WHITE_TERRACOTTA_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> ORANGE_TERRACOTTA_BRICK_SLAB = BlockUtilities.createBlock("orange_terracotta_brick_slab", () -> ModBlocks.ORANGE_TERRACOTTA_BRICK_SLAB, ItemGroup.BUILDING_BLOCKS);
@@ -314,6 +317,8 @@ public class BlockRegistry {
     public static RegistryObject<Block> SMALL_ANDESITE_BRICK_WALL = BlockUtilities.createBlockConfig("small_bricks", "small_andesite_brick_wall", () -> ModBlocks.SMALL_ANDESITE_BRICK_WALL, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> COBBLESTONE_BRICK_WALL = BlockUtilities.createBlock("cobblestone_brick_wall", () -> ModBlocks.COBBLESTONE_BRICK_WALL, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> MOSSY_COBBLESTONE_BRICK_WALL = BlockUtilities.createBlock("mossy_cobblestone_brick_wall", () -> ModBlocks.MOSSY_COBBLESTONE_BRICK_WALL, ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> OBSIDIAN_BRICK_WALL = BlockUtilities.createBlock("obsidian_brick_wall", () -> new ImmovableWallBlock( Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
+    public static RegistryObject<Block> SMALL_OBSIDIAN_BRICK_WALL = BlockUtilities.createBlock("small_obsidian_brick_wall", () -> new ImmovableWallBlock( Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F)), ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> PRISMARINE_BRICK_WALL = BlockUtilities.createBlock("prismarine_brick_wall", () -> ModBlocks.PRISMARINE_BRICK_WALL, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> DARK_PRISMARINE_WALL = BlockUtilities.createBlock("dark_prismarine_wall", () -> ModBlocks.DARK_PRISMARINE_WALL, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> DARK_PRISMARINE_BRICK_WALL = BlockUtilities.createBlock("dark_prismarine_brick_wall", () -> ModBlocks.DARK_PRISMARINE_BRICK_WALL, ItemGroup.BUILDING_BLOCKS);
