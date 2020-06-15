@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "side=left": { "model": "buildbasics:block/brown_tudor_forward_line_frame"},
+        "side=right": { "model": "buildbasics:block/brown_tudor_backward_line_frame"}
+    }
+}

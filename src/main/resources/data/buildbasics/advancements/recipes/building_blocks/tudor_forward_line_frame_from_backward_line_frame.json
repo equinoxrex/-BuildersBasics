@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "buildbasics:backward_line_frame"
+            "item": "buildbasics:tudor_backward_line_frame"
           }
         ]
       }
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "buildbasics:tudor__forward_line_frame_from_backward_line_frame"
+        "recipe": "buildbasics:tudor_forward_line_frame_from_backward_line_frame"
       }
     }
   },
