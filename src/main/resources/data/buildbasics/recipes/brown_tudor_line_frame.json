@@ -16,11 +16,11 @@
       "item": "minecraft:hay_block"
     },
     "D": {
-      "item": "minecraft:white_dye"
+      "item": "minecraft:brown_dye"
     }
   },
   "result": {
-    "item": "buildbasics:tudor_forward_line_frame",
+    "item": "buildbasics:brown_tudor_line_frame",
     "count": 4
   }
 }

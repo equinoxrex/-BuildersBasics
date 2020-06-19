@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:tudor_forward_line_frame"
+          "name": "buildbasics:polished_obsidian_stairs"
         }
       ],
       "conditions": [

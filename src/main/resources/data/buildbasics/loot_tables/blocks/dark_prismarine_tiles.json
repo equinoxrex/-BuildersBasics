@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:andesite_bricks"
+          "name": "buildbasics:dark_prismarine_tiles"
         }
       ],
       "conditions": [

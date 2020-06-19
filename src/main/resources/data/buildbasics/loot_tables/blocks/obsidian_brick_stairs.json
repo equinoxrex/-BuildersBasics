@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:prismarine_tiles"
+          "name": "buildbasics:obsidian_brick_stairs"
         }
       ],
       "conditions": [

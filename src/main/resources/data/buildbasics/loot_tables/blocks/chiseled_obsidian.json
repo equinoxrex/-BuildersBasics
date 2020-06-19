@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:brown_tudor_forward_line_frame"
+          "name": "buildbasics:chiseled_obsidian"
         }
       ],
       "conditions": [

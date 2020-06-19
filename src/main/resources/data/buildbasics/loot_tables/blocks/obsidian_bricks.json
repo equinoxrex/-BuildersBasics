@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:brown_tudor_backward_line_frame"
+          "name": "buildbasics:obsidian_bricks"
         }
       ],
       "conditions": [

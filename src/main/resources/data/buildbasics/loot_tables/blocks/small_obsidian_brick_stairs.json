@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "buildbasics:tudor_backward_line_frame"
+          "name": "buildbasics:small_obsidian_brick_stairs"
         }
       ],
       "conditions": [
