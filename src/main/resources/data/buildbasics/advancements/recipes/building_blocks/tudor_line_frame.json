@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "buildbasics:tudor_forward_line_frame_from_backward_line_frame"
+      "buildbasics:tudor_line_frame"
     ]
   },
   "criteria": {
@@ -11,7 +11,7 @@
       "conditions": {
         "items": [
           {
-            "item": "buildbasics:tudor_backward_line_frame"
+            "item": "minecraft:clay"
           }
         ]
       }
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "buildbasics:tudor_forward_line_frame_from_backward_line_frame"
+        "recipe": "buildbasics:tudor_line_frame"
       }
     }
   },

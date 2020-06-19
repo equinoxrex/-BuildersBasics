@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "buildbasics:tudor_forward_line_frame"
+      "buildbasics:brown_tudor_block"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "buildbasics:tudor_forward_line_frame"
+        "recipe": "buildbasics:brown_tudor_block"
       }
     }
   },
