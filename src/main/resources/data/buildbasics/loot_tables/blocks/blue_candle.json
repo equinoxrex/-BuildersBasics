@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "minecraft:blue_candle",
+                  "block": "buildbasics:blue_candle",
                   "properties": {
                     "candles": "2"
                   }
@@ -25,7 +25,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "minecraft:blue_candle",
+                  "block": "buildbasics:blue_candle",
                   "properties": {
                     "candles": "3"
                   }
@@ -37,7 +37,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:blue_candle"
+          "name": "buildbasics:blue_candle"
         }
       ]
     }
