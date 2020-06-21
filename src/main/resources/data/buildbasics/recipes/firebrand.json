@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  B",
+    " N ",
+    "B  "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "N": {
+      "item": "minecraft:nether_bricks"
+    }
+  },
+  "result": {
+    "item": "buildbasics:firebrand",
+    "count": 2
+  }
+}
