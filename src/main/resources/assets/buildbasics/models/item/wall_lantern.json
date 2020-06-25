@@ -1,3 +1,6 @@
 {
-  "parent": "buildbasics:block/wall_lantern"
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "buildbasics:item/wall_lantern"
+  }
 }
