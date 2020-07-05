@@ -1,5 +1,7 @@
 {
     "variants": {
-        "": { "model": "buildbasics:block/andesite_bricks"}
+        "": {
+            "model": "buildbasics:block/andesite_bricks"
+        }
     }
 }

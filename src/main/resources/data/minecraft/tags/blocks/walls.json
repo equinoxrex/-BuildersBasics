@@ -15,6 +15,13 @@
     "buildbasics:prismarine_brick_wall",
     "buildbasics:dark_prismarine_wall",
     "buildbasics:dark_prismarine_brick_wall",
-    "buildbasics:small_end_stone_brick_wall"
+    "buildbasics:small_end_stone_brick_wall",
+    "buildbasics:cracked_stone_brick_wall",
+    "buildbasics:cracked_granite_brick_wall",
+    "buildbasics:cracked_diorite_brick_wall",
+    "buildbasics:cracked_andesite_brick_wall",
+    "buildbasics:mossy_granite_brick_wall",
+    "buildbasics:mossy_diorite_brick_wall",
+    "buildbasics:mossy_andesite_brick_wall"
   ]
 }

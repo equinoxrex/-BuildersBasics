@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "buildbasics:block/mossy_diorite_bricks",
+        "top": "buildbasics:block/mossy_diorite_bricks",
+        "side": "buildbasics:block/mossy_diorite_bricks"
+    }
+}
