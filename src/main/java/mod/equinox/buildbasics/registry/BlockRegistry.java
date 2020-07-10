@@ -20,8 +20,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, BuildBasics.MODID);
 
-    public static RegistryObject<Block> IRON_CHAIN = BlockUtilities.createBlock("iron_chain", () -> ModBlocks.IRON_CHAIN, ItemGroup.DECORATIONS);
     public static RegistryObject<Block> WALL_LANTERN = BlockUtilities.createBlock("wall_lantern", () -> ModBlocks.WALL_LANTERN, ItemGroup.DECORATIONS);
+    public static RegistryObject<Block> IRON_CHAIN = BlockUtilities.createBlock("iron_chain", () -> ModBlocks.IRON_CHAIN, ItemGroup.DECORATIONS);
+    public static RegistryObject<Block> GOLD_LANTERN = BlockUtilities.createBlock("gold_lantern", () -> new LanternBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(3.0F).sound(SoundType.LANTERN).notSolid()), ItemGroup.DECORATIONS);
+    public static RegistryObject<Block> GOLD_WALL_LANTERN = BlockUtilities.createBlock("gold_wall_lantern", () -> new WallLanternBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(3.0F).sound(SoundType.LANTERN).notSolid()), ItemGroup.DECORATIONS);
+    public static RegistryObject<Block> GOLD_CHAIN = BlockUtilities.createBlock("gold_chain", () -> new ChainBlock(Block.Properties.create(Material.IRON, MaterialColor.AIR).hardnessAndResistance(3.0F).sound(SoundType.METAL).notSolid()), ItemGroup.DECORATIONS);
 
     public static RegistryObject<Block> COBBLESTONE_BRICKS = BlockUtilities.createBlock("cobblestone_bricks", () -> ModBlocks.COBBLESTONE_BRICKS, ItemGroup.BUILDING_BLOCKS);
     public static RegistryObject<Block> MOSSY_COBBLESTONE_BRICKS = BlockUtilities.createBlock("mossy_cobblestone_bricks", () -> ModBlocks.MOSSY_COBBLESTONE_BRICKS, ItemGroup.BUILDING_BLOCKS);
