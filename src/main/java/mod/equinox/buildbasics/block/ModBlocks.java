@@ -280,15 +280,15 @@ public class ModBlocks {
 
     public static Block RED_NETHER_BRICK_FENCE = new FenceBlock(Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).hardnessAndResistance(2.0F,6.0F));//.setRegistryName("red_nether_brick_fence");
 
-    public static Block WISTERIA_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_glass_door");
-    public static Block WISTERIA_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_glass_trapdoor");
+    public static Block WISTERIA_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD).notSolid());//.setRegistryName("wisteria_glass_door");
+    public static Block WISTERIA_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD).notSolid());//.setRegistryName("wisteria_glass_trapdoor");
     public static Block WISTERIA_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_boards");
     public static Block WISTERIA_BOARD_STAIRS = new StairsBlock(() -> WISTERIA_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_board_stairs");
     public static Block WISTERIA_BOARD_SLAB = new SlabBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_board_slab");
     public static Block WISTERIA_BOARD_WALL = new WallBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("wisteria_board_wall");
 
-    public static Block DRIFTWOOD_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD));//.setRegistryName("driftwood_glass_door");
-    public static Block DRIFTWOOD_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD));//.setRegistryName("driftwood_glass_trapdoor");
+    public static Block DRIFTWOOD_GLASS_DOOR = new GlassDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD).notSolid());//.setRegistryName("driftwood_glass_door");
+    public static Block DRIFTWOOD_GLASS_TRAPDOOR = new GlassTrapDoorBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(3.0F).sound(SoundType.WOOD).notSolid());//.setRegistryName("driftwood_glass_trapdoor");
     public static Block DRIFTWOOD_BOARDS = new Block(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("driftwood_boards");
     public static Block DRIFTWOOD_BOARD_STAIRS = new StairsBlock(() -> DRIFTWOOD_BOARDS.getDefaultState(), Block.Properties.create(Material.WOOD, MaterialColor.ADOBE).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("driftwood_board_stairs");
     public static Block DRIFTWOOD_BOARD_SLAB = new SlabBlock(Block.Properties.create(Material.WOOD, MaterialColor.WHITE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD));//.setRegistryName("driftwood_board_slab");

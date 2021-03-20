@@ -19,6 +19,9 @@ public class BlockDataRegistry {
 
         BlockDataUtilities.setRenderLayer(BlockRegistry.IRON_CHAIN.get(), cutout);
         BlockDataUtilities.setRenderLayer(BlockRegistry.WALL_LANTERN.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.GOLD_LANTERN.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.GOLD_WALL_LANTERN.get(), cutout);
+        BlockDataUtilities.setRenderLayer(BlockRegistry.GOLD_CHAIN.get(), cutout);
 
         BlockDataUtilities.setRenderLayer(BlockRegistry.GLASS_DOOR.get(), cutout);
         BlockDataUtilities.setRenderLayer(BlockRegistry.OAK_GLASS_DOOR.get(), cutout);

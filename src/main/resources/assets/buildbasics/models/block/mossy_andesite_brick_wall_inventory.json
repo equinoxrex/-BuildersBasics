@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "buildbasics:block/mossy_andesite_bricks"
+    }
+}

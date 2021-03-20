@@ -1,4 +1,5 @@
 modID = "buildbasics"
+path = "/Users/wetherdale/Documents/Henry Cartography/Modding/-Builder's Basics/src/main/resources"
 
 Blockstate = "cube"
 Block = True

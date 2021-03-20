@@ -35,7 +35,7 @@ public class WallLanternBlock extends Block {
     public static final DirectionProperty HORIZONTAL_FACING = HorizontalBlock.HORIZONTAL_FACING;
     private static final Map<Direction, VoxelShape> SHAPES = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 11.0D, 15.0D, 16.0D), Direction.SOUTH, Block.makeCuboidShape(5.0D, 1.0D, 0.0D, 11.0D, 15.0D, 11.0D), Direction.WEST, Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 16.0D, 15.0D, 11.0D), Direction.EAST, Block.makeCuboidShape(0.0D, 1.0D, 5.0D, 11.0D, 15.0D, 11.0D)));
 
-    protected WallLanternBlock(Block.Properties properties) {
+    public WallLanternBlock(Block.Properties properties) {
         super(properties);
         this.setDefaultState(this.stateContainer.getBaseState().with(HORIZONTAL_FACING, Direction.NORTH));
     }

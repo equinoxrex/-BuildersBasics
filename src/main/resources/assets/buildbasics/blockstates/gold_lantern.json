@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "hanging=true": { "model": "buildbasics:block/hanging_gold_lantern"},
+    "hanging=false": { "model": "buildbasics:block/gold_lantern"}
+  }
+}
